@@ -306,6 +306,16 @@ To fix it:
 $ git pull origin master --allow-unrelated-histories
 
 
+*13.2. Git refusing to merge unrelated histories. What is 'unrelated histories'?
+https://stackoverflow.com/questions/45272492/git-refusing-to-merge-unrelated-histories-what-is-unrelated-histories
+
+I think you have commit in remote repository and when you pull this error happen.
+Use thode commands:
+
+git pull origin master --allow-unrelated-histories
+git merge origin origin/master
+
+
 14. Git Pages:
 
 npm
