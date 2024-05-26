@@ -6,7 +6,7 @@ git add README.md
 
 git commit -m "first commit"
 
-git remote add origin https://github.com/ralitsavoronevska/modern_portfolio.git
+git remote add origin https://github.com/ralitsavoronevska/modern-portfolio.git
 
 git push -u origin master
 
@@ -31,10 +31,10 @@ npm => Node SASS /
 
 3. Git Bash => 
 
-mkdir modern_portfolio
+mkdir modern-portfolio
 
 
-cd modern_portfolio
+cd modern-portfolio
 
 
 code . (Open current folder for VSCode) => VSCode
@@ -77,7 +77,7 @@ a mafifest for our project:
 
 
 
-package name: modern_portfolio
+package name: modern-portfolio
 version: (1.0.0): (yes===enter)
 
 
@@ -106,13 +106,13 @@ license: MIT
 => That creates a package.json file with some key-value pairs
 
 
-From modern_portfolio folder in the console write:
+From modern-portfolio folder in the console write:
 
 
 
 npm i node-sass
 
-=> it will create node_modules folder into the modern_portfolio folder
+=> it will create node_modules folder into the modern-portfolio folder
 
 => also creates a package-lock.json file
 
@@ -136,7 +136,7 @@ to
 
 
 
-From modern_portfolio folder on the console, to run it, 
+From modern-portfolio folder on the console, to run it, 
 since it is a script (a child of that name-value property):
 
 
@@ -159,7 +159,7 @@ scss === folder we just created
 
 
 
-From modern_portfolio folder on the console, to run it, again:
+From modern-portfolio folder on the console, to run it, again:
 
 
 
@@ -212,7 +212,7 @@ In the .gitignore add node_modules
 
 
 
-From modern_portfolio folder on the console write:
+From modern-portfolio folder on the console write:
 
 
 /right mouse btn, Git Bash here/
@@ -230,7 +230,7 @@ node_modules
 11. Create /initialize/ a repository on GitHub
 
 
-From modern_portfolio folder on the console write:
+From modern-portfolio folder on the console write:
 
 /right mouse btn, Git Bash here/
 
@@ -255,7 +255,7 @@ git add .
 
 To do the firs commit:
 
-/from modern_portfolio folder on the console write/
+/from modern-portfolio folder on the console write/
 
 
 git commit -m 'Initial workflow set up'
@@ -287,7 +287,7 @@ git commit -m ''
 
 
 
-git remote add origin https://github.com/ralitsavoronevska/modern_portfolio.git
+git remote add origin https://github.com/ralitsavoronevska/modern-portfolio.git
 git push -u origin master
 
 
@@ -330,7 +330,7 @@ npm i gh-pages
 
 write
 
-"homepage": "http://user_name.github.io/modern_portfolio",
+"homepage": "http://user_name.github.io/modern-portfolio",
 
 
 
