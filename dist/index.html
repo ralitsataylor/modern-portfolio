@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern portfolio">
+  <meta name="web_author" content="Ralitsa Voronevska">
+  <meta name="theme-color" content="#1fcbcf">
+  <link rel="stylesheet" href="css/all.css" media="all">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Welcome to my portfolio</title>
+</head>
+
+<body id="bg-img">
+
+  <header>
+  	<a href="index.html" class="nav-link" aria-label="Home page">
+      <div class="logo"></div>
+    </a>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <a href="index.html" aria-label="Home page">
+          <div class="logo"></div>
+        </a>
+        <div class="portrait"></div>
+
+        <div class="icons">
+          <a href="https://twitter.com/RVoronevska" target="_blank" rel="noopener" aria-label="Twitter icon">
+            <svg class="fab fa-twitter fa-2x"></svg>
+          </a>
+          <a href="https://www.facebook.com/ralitsavoronevska" target="_blank" rel="noopener" aria-label="Facebook icon">
+            <svg class="fab fa-facebook-square fa-2x"></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ralitsavoronevska123/" target="_blank" rel="noopener" aria-label="LinkedIn icon">
+            <svg class="fab fa-linkedin fa-2x"></svg>
+          </a>
+          <a href="https://github.com/ralitsavoronevska/" target="_blank" rel="noopener" aria-label="GitHub icon">
+            <svg class="fab fa-github fa-2x"></svg>
+          </a>
+          <a href="https://codepen.io/ralitsavoronevska/" target="_blank" rel="noopener" aria-label="Codepen icon">
+            <svg class="fab fa-codepen fa-2x"></svg>
+          </a>
+          <a href="https://www.freecodecamp.org/ralitsavoronevska" target="_blank" rel="noopener" aria-label="Freecodecamp icon"><svg class="fab fa-free-code-camp fa-2x"></svg></a>
+        </div>
+      </div>
+
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="index.html" class="nav-link" aria-label="Home page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" aria-label="About me page">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link" aria-label="My work page">My work</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link" aria-label="Contact me page">Contact me</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="home">
+    <h1 class="lg-heading">Ralitsa <span class="text-secondary">Voronevska</span></h1>
+    <h2 class="sm-heading">The <span class="txt-type text-secondary" data-wait="3000" data-words='["Front-end Dev", "Project Manager", "Survey Programmer", "IT Recruiter", "TA Administrator"]'></span></h2>
+    <script>
+      'use strict';
+      // ES6 Class
+      class TypeWriter {
+        constructor(txtElement, words, wait = 3000) {
+          this.txtElement = txtElement;
+          this.words = words;
+          this.txt = '';
+          this.wordIndex = 0;
+          this.wait = parseInt(wait, 10);
+          this.type();
+          this.isDeleting = false;
+        }
+
+        type() {
+          // Current index of word
+          const current = this.wordIndex % this.words.length;
+          // Get full text of current word
+          const fullTxt = this.words[current];
+
+          // Check if deleting
+          if(this.isDeleting) {
+            // Remove char
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+            // Add char
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+
+          // Insert txt into element
+          this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+          // Initial Type Speed
+          let typeSpeed = 300;
+
+          if(this.isDeleting) {
+            typeSpeed /= 2;
+          }
+
+          // If word is complete
+          if(!this.isDeleting && this.txt === fullTxt) {
+            // Make pause at end
+            typeSpeed = this.wait;
+            // Set delete to true
+            this.isDeleting = true;
+          } else if(this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            // Move to next word
+            this.wordIndex++;
+            // Pause before start typing
+            typeSpeed = 500;
+          }
+
+          setTimeout(() => this.type(), typeSpeed);
+        }
+      }
+
+      // Init On DOM Load
+      document.addEventListener('DOMContentLoaded', init);
+
+      // Init App
+      function init() {
+        const txtElement = document.querySelector('.txt-type');
+        const words = JSON.parse(txtElement.getAttribute('data-words'));
+        const wait = txtElement.getAttribute('data-wait');
+        // Init TypeWriter
+        new TypeWriter(txtElement, words, wait);
+      }
+    </script>
+    <div class="icons">
+      <a href="https://twitter.com/RVoronevska" target="_blank" rel="noopener" aria-label="Twitter icon">
+        <svg class="fab fa-twitter fa-2x"></svg>
+      </a>
+      <a href="https://www.facebook.com/ralitsavoronevska" target="_blank" rel="noopener" aria-label="Facebook icon">
+        <svg class="fab fa-facebook-square fa-2x"></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ralitsavoronevska123/" target="_blank" rel="noopener" aria-label="LinkedIn icon">
+        <svg class="fab fa-linkedin fa-2x"></svg>
+      </a>
+      <a href="https://github.com/ralitsavoronevska/" target="_blank" rel="noopener" aria-label="GitHub icon">
+        <svg class="fab fa-github fa-2x"></svg>
+      </a>
+      <a href="https://codepen.io/ralitsavoronevska/" target="_blank" rel="noopener" aria-label="Codepen icon">
+        <svg class="fab fa-codepen fa-2x"></svg>
+      </a>
+      <a href="https://www.freecodecamp.org/ralitsavoronevska" target="_blank" rel="noopener" aria-label="Freecodecamp icon"><svg class="fab fa-free-code-camp fa-2x"></svg></a>
+    </div>
+
+  </main>
+
+  <script src="js/main.js" async></script>
+
+</body>
+</html>
