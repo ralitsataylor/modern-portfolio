@@ -11,9 +11,9 @@
   "author": "Ralitsa Voronevska",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "sass": "^1.90.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ralitsavoronevska/modern-portfolio.git"
