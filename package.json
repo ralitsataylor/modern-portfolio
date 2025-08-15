@@ -11,7 +11,6 @@
   "author": "Ralitsa Voronevska",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "sass": "^1.90.0"
   },
   "repository": {
@@ -20,5 +19,8 @@
   },
   "bugs": {
     "url": "https://github.com/ralitsavoronevska/modern-portfolio/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
