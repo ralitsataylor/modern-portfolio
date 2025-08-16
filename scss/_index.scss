@@ -1,3 +1,15 @@
+$primary-color: #444;
+$secondary-color: #1fcbcf;
+
+@mixin textShadow {
+  text-shadow:
+    3px 2px 1px $secondary-color,
+    -1px -1px 0 $secondary-color,
+    0px 0px 0 $secondary-color,
+    1px 1px 0 $secondary-color,
+    2px 2px 0 $secondary-color;
+}
+
 #bg-img {
   // https://css-tricks.com/perfect-full-page-background-image/
   background: url('../img/background.svg') no-repeat center center fixed;
@@ -17,7 +29,7 @@
     z-index: -1;
     // the color is over the image to be able to see the image 
     // we need to wrap up the background with an rgba to have an opacity too
-    background: rgba(43, 43, 43, $background-opacity);   
+    background: rgba(43, 43, 43, .9);   
   }
 }
 

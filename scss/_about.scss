@@ -1,3 +1,12 @@
+@use 'sass:color';
+
+$primary-color: #444;
+$secondary-color: #1fcbcf;
+
+@mixin easeOut {
+  transition: all .5s ease-out;
+}
+
 #about {
   .about-info {
     display: grid;
@@ -45,7 +54,7 @@
     .job-6 { grid-area: job6; }
 
     .job {
-      background: darken($primary-color, 5);
+      background: color.adjust($primary-color, $lightness: -5%);
       padding: 3rem;
       border-bottom: 3px solid $secondary-color;
       h3, h4, p {
