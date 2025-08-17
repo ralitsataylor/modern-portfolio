@@ -37,11 +37,13 @@ html {
 
 body {
   height: 100%;
+  font-weight: 400 !important;
+  font-style: normal;
   font-size: 1rem;
   line-height: 1.5;
   background-color: $primary-color;
   color: set-text-color($primary-color);
-  font-family: 'Roboto Slab', 'Font Awesome 5 Brands', 'Font Awesome 5 Solid', sans-serif;
+  font-family: "Varela Round", sans-serif !important;
 }
 
 a {
