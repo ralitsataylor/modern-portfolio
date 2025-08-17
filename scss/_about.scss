@@ -23,7 +23,7 @@ $secondary-color: #1fcbcf;
     .portrait {
       width: 225px;
       height: 225px;
-      background: url('../img/portrait.jpg');
+      background: url('../img/portrait.webp');
       border-radius: 50%;
       border: 3px solid $secondary-color;
     }
@@ -84,7 +84,7 @@ $secondary-color: #1fcbcf;
       grid-template-columns: 1fr;
 
       .portrait {
-        background: url('../img/portrait_small.jpg');
+        background: url('../img/portrait_small.webp');
         width: 150px;
         height: 150px;
         margin-top: 3rem;
