@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-  debugger
   let menu = document.querySelector('.menu'),
       menuBtn = document.querySelector('.menu-btn'),
 	    menuNav = document.querySelector('.menu-nav'),
