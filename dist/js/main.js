@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
       fedCards = document.querySelectorAll(".fed");
 
     // Filter All Projects
-    btnAll.addEventListener("click", () => {
+    btnAll?.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnAll.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     // Filter FreeCodeCamp Projects
-    btnFcc.addEventListener("click", () => {
+    btnFcc?.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnFcc.classList.add("active--btn");
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     // Filter Personal Projects
-    btnPersonal.addEventListener("click", () => {
+    btnPersonal?.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnPersonal.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     // Filter Front-end Development Interview Tasks
-    btnFed.addEventListener("click", () => {
+    btnFed?.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnFed.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
