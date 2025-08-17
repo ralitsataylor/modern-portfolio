@@ -1,4 +1,5 @@
-window.addEventListener("DOMContentLoaded",() => {
+window.addEventListener("DOMContentLoaded", () => {
+  debugger
   let menu = document.querySelector('.menu'),
       menuBtn = document.querySelector('.menu-btn'),
 	    menuNav = document.querySelector('.menu-nav'),
@@ -43,43 +44,43 @@ window.addEventListener("DOMContentLoaded",() => {
       fedCards = document.querySelectorAll(".fed");
 
     // Filter All Projects
-    btnAll.onclick = function() {
+    btnAll.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnAll.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
       descAll.classList.add('active--desc');
       for (let cards of allCards) { cards.style.display = "block"; }
-    }
+    });
 
     // Filter FreeCodeCamp Projects
-    btnFcc.onclick = function() {
+    btnFcc.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnFcc.classList.add("active--btn");
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
       descFcc.classList.add('active--desc');
       for (let cards of allCards) { cards.style.display = "none"; }
       for (let cards of fccCards) { cards.style.display = "block"; }
-    };
+    });
 
     // Filter Personal Projects
-    btnPersonal.onclick = function() {
+    btnPersonal.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnPersonal.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
       descPersonal.classList.add('active--desc');
       for (let cards of allCards) { cards.style.display = "none"; }
       for (let cards of personalCards) { cards.style.display = "block"; }
-    };
+    });
 
     // Filter Front-end Development Interview Tasks
-    btnFed.onclick = function() {
+    btnFed.addEventListener("click", () => {
       for (let button of allButtons) { button.classList.remove('active--btn'); }
       btnFed.classList.add('active--btn');
       for (let desc of allDesc) { desc.classList.remove('active--desc'); }
       descFed.classList.add('active--desc');
       for (let cards of allCards) { cards.style.display = "none"; }
       for (let cards of fedCards) { cards.style.display = "block"; }
-    };
+    });
 
     // tabCards Onclick Effect
     document.querySelectorAll(".card__item").forEach(function (li) {
