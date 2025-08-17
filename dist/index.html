@@ -38,7 +38,15 @@
     <link rel="preload" href="https://fonts.googleapis.com/s/robotoslab/v35/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <link rel="stylesheet" href="css/all.css" media="all">
+    <!-- Main stylesheets: Bootstrap and my own styles -->
+    <!-- <link rel="stylesheet" href="purged-bootstrap.min.css" fetchpriority="high"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" fetchpriority="high">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- noscript fallbacks -->
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap">
+    </noscript>
   </head>
 
 <body id="bg-img">
@@ -192,7 +200,8 @@
 
   </main>
 
-  <script src="js/main.js" async></script>
+  <script scr="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 
 </body>
 </html>

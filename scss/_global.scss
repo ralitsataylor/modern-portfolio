@@ -22,12 +22,6 @@ $secondary-color: #1fcbcf;
   @else { @return #fff; }
 }
 
-@mixin linearLineBG {
-  background-image: linear-gradient(to left bottom, #3490b3, #342a37, #fff, #4a5778, #1fcbcf, #444), linear-gradient(to left bottom, #3490b3, #342a37, #fff, #4a5778, #1fcbcf, #444);
-  background-position: center left, center right;
-  background-repeat: no-repeat;
-}
-
 * { 
   margin: 0; 
   padding: 0; 
