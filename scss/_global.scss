@@ -464,7 +464,7 @@ footer {
 }
 
 /** media queries for responsive design **/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   h2 {
     &.sm-heading { 
       padding-left: 35px; 
