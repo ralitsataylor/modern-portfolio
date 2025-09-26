@@ -1,31 +1,34 @@
 window.addEventListener("DOMContentLoaded", () => {
-  let menu = document.querySelector('.menu'),
-      menuBtn = document.querySelector('.menu-btn'),
-	    menuNav = document.querySelector('.menu-nav'),
-	    menuBranding = document.querySelector('.menu-branding'),
-	    navItems = document.querySelectorAll('.nav-item'),
-      showMenu = false;
+  // let menu = document.querySelector('.menu'),
+  //     menuBtn = document.querySelector('.menu-btn'),
+	//     menuNav = document.querySelector('.menu-nav'),
+	//     menuBranding = document.querySelector('.menu-branding'),
+	//     navItems = document.querySelectorAll('.nav-item'),
+  //     showMenu = false;
 
-	function toggleMenu() {
-		if (!showMenu) {
-			menuBtn.classList.add("close");
-			menu.classList.add("show");
-			menuNav.classList.add("show");
-			menuBranding.classList.add("show");
-			navItems.forEach(item => item.classList.add("show"));
-			document.body.style.overflowY = "hidden";
-			showMenu = true;
-		} else {
-			menuBtn.classList.remove("close");
-			menu.classList.remove("show");
-			menuNav.classList.remove("show");
-			menuBranding.classList.remove("show");
-			navItems.forEach(item => item.classList.remove("show"));
-			document.body.style.overflowY = "scroll";
-			showMenu = false;
-		}
-	}
-	menuBtn.addEventListener("click", toggleMenu);
+	// function toggleMenu() {
+	// 	if (!showMenu) {
+	// 		menuBtn.classList.add("close");
+	// 		menu.classList.add("show");
+	// 		menuNav.classList.add("show");
+	// 		menuBranding.classList.add("show");
+	// 		navItems.forEach(item => item.classList.add("show"));
+	// 		document.body.style.overflowY = "hidden";
+	// 		showMenu = true;
+	// 	} else {
+	// 		menuBtn.classList.remove("close");
+	// 		menu.classList.remove("show");
+	// 		menuNav.classList.remove("show");
+	// 		menuBranding.classList.remove("show");
+	// 		navItems.forEach(item => item.classList.remove("show"));
+	// 		document.body.style.overflowY = "scroll";
+	// 		showMenu = false;
+	// 	}
+	// }
+	// menuBtn.addEventListener("click", toggleMenu);
+
+  
+  // Tab Cards Filter
 
 	let allButtons = document.querySelectorAll(".tabCards__btn"),
       btnAll = document.getElementById("all"),
