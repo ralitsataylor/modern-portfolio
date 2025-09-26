@@ -1,4 +1,4 @@
-$primary-color: #444;
+$bg-color: #444;
 $secondary-color: #1fcbcf;
 
 @mixin linearLineBG {
@@ -38,7 +38,7 @@ main#work { padding: 9rem 1rem 1rem 1rem; }
         border-radius: 0.5rem;
         background: linear-gradient(to left bottom, #3490b3, #342a37, #fff, #4a5778, $secondary-color, #444);
         .tabCards__btn { font-size: 1.45rem; display: flex; justify-content: center;
-    align-items: center; text-align: center; height: 35px; font-weight: bold; padding: 1rem; border-radius: 0.5rem; background: $primary-color; color: $secondary-color; margin: 0;
+    align-items: center; text-align: center; height: 35px; font-weight: bold; padding: 1rem; border-radius: 0.5rem; background: $bg-color; color: $secondary-color; margin: 0;
         }
       }
     }
@@ -207,7 +207,6 @@ main#work { padding: 9rem 1rem 1rem 1rem; }
       .tabCards__btn, .active--btn { padding: 1rem 2rem !important; }
     }
   }
-  .cards.container { max-width: 620px; }
 }
 
 @media screen and (min-width: 992px) {

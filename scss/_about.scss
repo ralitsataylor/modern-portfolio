@@ -1,7 +1,7 @@
-@use 'sass:color';
-
-$primary-color: #444;
-$secondary-color: #1fcbcf;
+$bg-color: #1a1a1a;
+$pink: #f864bd;
+$purple: #7b7beb;
+$text-color: #ffffff;
 
 @mixin easeOut {
   transition: all .5s ease-out;
@@ -25,7 +25,7 @@ $secondary-color: #1fcbcf;
       height: 225px;
       background: url('../img/portrait.webp');
       border-radius: 50%;
-      border: 3px solid $secondary-color;
+      border: 3px solid $purple;
     }
 
     .bio-image {
@@ -37,7 +37,7 @@ $secondary-color: #1fcbcf;
       text-align: center;
       grid-area: icons;
       margin: auto;
-      color: $secondary-color;
+      color: $purple;
       @include easeOut;
     }
 
@@ -54,14 +54,14 @@ $secondary-color: #1fcbcf;
     .job-6 { grid-area: job6; }
 
     .job {
-      background: color.adjust($primary-color, $lightness: -5%);
+      background: $bg-color;
       padding: 3rem;
-      border-bottom: 3px solid $secondary-color;
+      border-bottom: 3px solid $purple;
       h3, h4, p {
         font-size: 1.8rem;
         font-weight: bold;
       }
-      h3, h4, a { color: $secondary-color; }
+      h3, h4, a { color: $purple; }
       a { text-decoration: underline; }
     }
   }
@@ -89,7 +89,7 @@ $secondary-color: #1fcbcf;
         height: 150px;
         margin-top: 3rem;
         border-radius: 50%;
-        border: 3px solid $secondary-color;
+        border: 3px solid $purple;
       }
     }
   }

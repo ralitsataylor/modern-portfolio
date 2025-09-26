@@ -1,74 +1,126 @@
-# Responsive Portfolio Website
-[Live Preview](https://ralitsavoronevska.github.io/modern_portfolio/)
+# 🚀 Modern Portfolio
 
-# Desktop Preview:
-<img src="dist/img/modern_portfolio_desktop_preview.jpg" />
+📝 [CodePen](https://codepen.io/ralitsataylor/pen/KOdQJZ/)
+🔗[Live GitHub Preview](https://ralitsataylor.github.io/modern-portfolio/)
 
-# Tablet Landscape Preview:
-<img src="dist/img/modern_portfolio_tablet_preview_landscape_1.png"/>
-<img src="dist/img/modern_portfolio_tablet_preview_landscape_2.png"/>
+## 🖥️ Desktop preview
+<img src="dist/img/modern-portfolio-desktop-preview.png" loading="lazy">
 
 <table>
   <tr>
-    <td colspan="2">Tablet Portrait Preview</td>
+    <td colspan="2">📱 Tablet preview:</td>
   </tr>
   <tr>
-    <td><img src="dist/img/modern_portfolio_tablet_preview_portrait_1.png"></td>
-    <td><img src="dist/img/modern_portfolio_tablet_preview_portrait_2.png"></td>
+    <td><img src="dist/img/modern-portfolio-tablet-preview-1.png" loading="lazy"></td>
+    <td><img src="dist/img/modern-portfolio-tablet-preview-2.png" loading="lazy"></td>
   </tr>
- </table>
+</table>
 
 <table>
   <tr>
-    <td colspan="2">Mobile Preview</td>
+    <td colspan="2">📱 Mobile Preview:</td>
   </tr>
   <tr>
-    <td><img src="dist/img/modern_portfolio_mobile_preview_1.jpg"></td>
-    <td><img src="dist/img/modern_portfolio_mobile_preview_2.jpg"></td>
+    <td><img src="dist/img/modern-portfolio-mobile-preview-1.png" loading="lazy"></td>
+    <td><img src="dist/img/modern-portfolio-mobile-preview-2.png" loading="lazy"></td>
   </tr>
  </table>
 
-# Built with:
-* HTML5, CSS3 (Grid template areas, Flex, transitions, etc.), SASS (mixins, etc.), Vanilla JS
-* [Google Fonts](https://fonts.google.com/)
-* [Font Awesome 5.9.0](https://fontawesome.com/changelog/latest)
+<br>
 
-# Browser support:
-(Last updated and tested: 22/06/2020)
-* Chrome 83.0.4103.116 (Official Build) (64-bit)
-* Firefox 77.0.1 (64-bit)
-* Opera 68.0.3618.173
-* IE Microsoft Edge 83.0.478.56 (Official build) (64-bit)
+# 🏅 W3C HTML Validator
+<img src="dist/img/modern-portfolio-w3-html-validator.png" loading="lazy">
 
-# Tools used:
-* Photoshop CC 2020
-* [CSS filter generator to convert from black to target hex color [SVGs]](https://codepen.io/sosuke/pen/Pjoqqp)
-* [W3C HTML Validator](https://validator.w3.org/)
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-* [LightHouse Audit](https://developers.google.com/web/tools/lighthouse/)
-* [PageSpeed Insights Audit](https://developers.google.com/speed/pagespeed/insights/)
+<br>
 
-# Chrome LightHouse Audit
+# 🏅 W3C CSS Validator
+<img src="dist/img/modern-portfolio-w3c-css-validator.png" loading="lazy">
 
-* Desktop & Mobile:
-<img src="dist/img/modern_portfolio_desktop_&_mobile_LightHouse_Audit.jpg" />
+<br>
 
-# PageSpeed Insights Results
+# 🌈 Chrome LightHouse Audit
 
-* Desktop:
-<img src="dist/img/PageSpeed_Insights_desktop.jpg" />
+Desktop:
 
-* Mobile:
-<img src="dist/img/PageSpeed_Insights_mobile.jpg" />
+<img src="dist/img/modern-portfolio-light-house-audit-desktop.png" loading="lazy">
 
-# Resources used:
+<br>
 
-# Logo:
-* [Smoke Logo Tutorial Article](http://dezcorb.com/how-to-create-a-smoke-logo-in-photoshop-cs6-smoke-alphabet-logo/)
-* [Smoke Logo YouTube Tutorial](https://www.youtube.com/watch?time_continue=1&v=BuDmeErQXqQ)
+Mobile:
 
-# Traversy Media:
-* [Responsive Portfolio Website Project YouTube Series Tutorial](https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU)
-* [Responsive Portfolio Website Project in GitHub](https://github.com/bradtraversy/modern_portfolio)
-* [Pure JavaScript Type Writer Effect YouTube Tutorial](https://www.youtube.com/watch?v=POX3dT-pB4E)
-* [Pure JavaScript Type Writer Effect Project in CodePen](https://codepen.io/bradtraversy/pen/jeNjwP)
+<img src="dist/img/modern-portfolio-light-house-audit-mobile.png" loading="lazy">
+
+<br>
+
+# ⚡ PageSpeed Insights Results
+
+Desktop:
+
+<img src="dist/img/modern-portfolio-pagespeed-insights-desktop.png" loading="lazy">
+
+<br>
+
+Mobile:
+
+<img src="dist/img/modern-portfolio-pagespeed-insights-mobile.png" loading="lazy">
+
+</details>
+
+<br>        
+                                                                                                                                              
+# 🛠️ Built with:
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white/)
+<img src="./dist/img/svgs/git.svg?sanitize=true" alt="Git icon" loading="lazy"> ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white/)                                                                                                                                              
+![HTML5](https://img.shields.io/badge/html5-%23FFFFFF.svg?style=for-the-badge&logo=html5&logoColor=white/) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white/) <img src="./dist/img/svgs/sass.svg?sanitize=true" alt="Sass icon" loading="lazy"> ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E/) <img src="./dist/img/svgs/bootstrap.svg?sanitize=true" alt="Bootstrap icon" loading="lazy">            
+🔨 SCSS Files [Responsiveness, Grid template areas, Flex Layout, transitions, mixins, etc.]                                                                                  
+⛏️ [Google Font: Playfair Display](https://fonts.google.com/specimen/Playfair+Display/)                                                                            
+🪓 [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)                                                             
+🪛 [Bootstrap v5.3 Icons](https://icons.getbootstrap.com/)                                                                                       
+🔩 [Bootstrap v5.3 Card](https://getbootstrap.com/docs/5.3/components/card/)                                                                    
+[ChatGPT](https://chatgpt.com/)
+
+
+# ✨ Features:
+✅ Brendan Eich's full Wikipedia biography showcased in a modern way                                                                              
+✅ Custom-styled Timeline with elegant Bootstrap Cards                                                                                         
+✅ Reference to Brendan Eich's Wikipedia Page                                                                                                     
+✅ Custom-styled Mr. Eich's Famous Quote                                                                                                          
+✅ Related Social and Info Links                   
+✅ Stylish scroll-to-top button                                                                                                                   
+✅ manifest.json                                                                                                                                 
+
+# 🧰 Online resources and tools:
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white/) <img src="./dist/img/svgs/stackoverflow.svg?sanitize=true" alt="StackOverflow icon" loading="lazy"> ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white/) ![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white/) ![Wikipedia](https://img.shields.io/badge/Wikipedia-%23000000.svg?style=for-the-badge&logo=wikipedia&logoColor=white/)                  
+🖼️ [Photopea [Online Photo Editor]](https://www.photopea.com/)   
+[Font Awesome 7.0.1](https://fontawesome.com/#fa7)                                                                       
+🪄 [svg-to-png & svg minification](https://www.svgviewer.dev/)     
+[svg online cropping tool](https://svgcrop.com/)                                                          
+⭐ [jpg-to-webp free converter](https://www.freeconvert.com/jpg-to-webp/)         
+🌃 [favicon converter](https://favicon.io/favicon-converter/)                                                                                     
+
+# 🌐 Browser Support:
+(Last updated and tested: 26/09/2025)                                                                                                            
+🌟 Chrome 140.0.7339.186 (64-bit)                                                                                                           
+🦊 Firefox 143.0.1 (64-bit)                                                                                                                 
+🏴‍☠️ Opera 122.0.5643.51 (64-bit)                                                                                                        
+🪟 Edge 140.0.3485.81 (64-bit)                                                                                                                   
+
+# 🧪 Online Validators:
+✔️ [W3C HTML Validator](https://validator.w3.org/)                                                                                               
+✔️ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)                                                                                     
+💡 [LightHouse Audit](https://developers.google.com/web/tools/lighthouse/)                                                                       
+⚡ [PageSpeed Insights Audit](https://pagespeed.web.dev/)         
+⭐ [WebPageTest](https://www.webpagetest.org/)                                                                                                    
+
+# 🌟 Inspiration & Credits:         
+🎞️ [Responsive Portfolio Website Project YouTube Series Tutorial](https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU)                                                                                                         
+:octocat [Responsive Portfolio Website Project in GitHub](https://github.com/bradtraversy/modern_portfolio)                                      
+🎞️ [Pure JavaScript Type Writer Effect YouTube Tutorial](https://www.youtube.com/watch?v=POX3dT-pB4E)                                           
+🎞️ [Pure JavaScript Type Writer Effect Project in CodePen](https://codepen.io/bradtraversy/pen/jeNjwP)                                          
+📝 [Floating Action Button with Popup Menu [ELEMENTS]](https://codepen.io/RaduBratan/pen/eYJZLpN)                                                
+
+---
+  
+🙌 Thanks for checking out my project! More coming 🔜.                                                                                            
+Stay tuned 🚀 and don't forget to give the project a star!                                                                                        
+⭐ Made with lots of 💗, ☕, and a sprinkle of ✨ by Ralitsa Taylor!                                                                                  
