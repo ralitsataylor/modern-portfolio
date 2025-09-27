@@ -99,14 +99,12 @@ main {
     padding-top: 5.75rem; /* 92px */
   }
   &#home-section { 
-    .hero-img-and-icons, .name-and-info {
-      display: flex;
-      flex-direction: column;
+    .hero-and-socials, .name-and-info {
       margin-top: 3rem; /* 48px */
-      .portrait {
+      .hero-img {
         width: 14.0625rem; /* 225px */
         height: 14.0625rem; /* 225px */
-        background: url('../img/portrait.webp') no-repeat center center;
+        background: url('../img/hero.webp') no-repeat center center;
         border-radius: var(--border-radius);
         $border: .25rem; /* 4px */
         background-clip: padding-box;
@@ -134,14 +132,13 @@ main {
 .logo {
   background: url('../img/logo.png') no-repeat;
   left: .5rem; /* 8px */
-  top: 0;
   width: 5rem; /* 80px */
   height: 5.3125rem; /* 85px */
   transform: scale(.7);
 }
 
 /* SVG icons */
-.icons {
+.social-icons {
   .svg-icons {
     .icon-path {
       fill: var(--purple);

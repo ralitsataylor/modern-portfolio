@@ -34,9 +34,8 @@
 
     <!-- Preload Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v23/pxiDyp8kv8JHgFVrJJLmv1pVF9eOYktMqg.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2" as="font" type="font/woff2" crossorigin> -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Main stylesheets: Bootstrap and my own styles -->
     <!-- <link rel="stylesheet" href="purged-bootstrap.min.css" fetchpriority="high"> -->
@@ -45,19 +44,21 @@
 
     <!-- noscript fallbacks -->
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
     </noscript>
   </head>
 
   <body class="position-relative fw-normal fst-normal">
 
+    <!-- start of header section -->
     <header class="position-fixed w-100">
       <a href="index.html" class="nav-link" aria-label="Home page">
         <div class="logo position-absolute"></div>
       </a>
     </header>
+    <!-- end of header section -->
 
-
+    <!-- start of main section -->
     <main id="contact">
       <h1 class="lg-heading">Contact <span class="gradient-text">Me</span></h1>
       <h2 class="sm-heading">This is how you can reach me...</h2>
@@ -72,7 +73,60 @@
         <div><span class="gradient-text">Adress: </span> Burnley, Lancashire, UK</div>
       </div>
 
+      <!-- start of popup-menu section -->
+      <div class="popup-menu position-absolute">
+        <input type="checkbox" name="mobile-menu" class="w-100 h-100 position-absolute" />
+        <div class="fab center position-relative"></div>
+        <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
+
+          <!-- start of about me page link -->
+          <a href="about.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>
+            </svg>
+          </a>
+          <!-- end of about me page link -->
+
+          <!-- start of work experience page link -->
+          <a href="work.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"/>
+            </svg>
+          </a>
+          <!-- end of work experience page link -->
+
+          <!-- start of contact me page link -->
+          <a href="contact.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/>
+            </svg>
+          </a>
+          <!-- end of contact me page link -->
+
+        </div>
+      </div>
+      <!-- end of popup-menu section -->
+
     </main>
+    <!-- end of main section -->
 
     <footer id="footer" class="center fw-bold p-3">
       <p class="lead fw-bold m-0 gradient-text"><a href="http://ralitsataylor.github.io/modern-portfolio/" class="fw-bold text-decoration-none" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
