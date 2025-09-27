@@ -39,25 +39,20 @@ body {
   line-height: 1.5;
   color: $text-color;
   font-family: "Playfair Display", sans-serif !important;
-  &:not(.body-index) {
-    background-color: $bg-color;
-  }
-  &.body-index {
-    background: url('../img/fullbackground.jpg') no-repeat center center fixed;
-    background-size: cover;
+  background: url('../img/fullbackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100dvh;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     height: 100dvh;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100dvh;
-      z-index: -1;
-      background: rgba(26, 26, 26, .95);   
-    }
+    z-index: -1;
+    background: rgba(26, 26, 26, .95);   
   }
 }
 
@@ -70,6 +65,12 @@ a {
 h1, h2, h3 {
   &.sm-heading {
     padding: .2rem 0;
+  }
+}
+
+h2 {
+  &.sm-heading {
+    font-size: calc(1.3rem + .9vw);
   }
 }
 
@@ -300,20 +301,20 @@ main {
 //   }
 // }
 
-/* Floating Mobile Action Button */
+/* Floating Action Button */
 .wrapper {
   width: var(--width);
   height: var(--height);
   border-radius: var(--border-radius);
-  margin-top: 44rem;
-  margin-left: 16rem;
+  bottom: -8%;
+  right: 8%;
   @media (min-width: 768px) {
-    margin-top: 58rem;
-    margin-left: 38rem;
+    bottom: -6%;
+    right: 5%;
   }
   @media (min-width: 1200px) {
-    // margin-top: 48rem;
-    // margin-left: 88rem;
+    bottom: -6%;
+    right: 2%;
   }
   .fab {
     background: $purple;
@@ -365,7 +366,7 @@ main {
     a {
       color: $purple;
       opacity: 0.8;
-      .mobile-menu-icons {
+      .menu-icons {
         fill: $purple;
       }
       &:hover {
@@ -450,7 +451,6 @@ main {
   }
 }
 
-
 footer {
   display: flex;
   justify-content: center;
@@ -467,7 +467,16 @@ footer {
 @media (min-width: 768px) {
   h2 {
     &.sm-heading { 
-      padding-left: 35px; 
+      padding-left: 35px;
+      font-size: calc(1.325rem + .9vw); 
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    &.sm-heading { 
+      padding-left: 60px; 
     }
   }
 }
