@@ -51,8 +51,8 @@
 
   <body class="position-relative overflow-hidden width-100 height-100 fw-normal fst-normal">
 
-    <header class="position-fixed">
-      <a href="#" class="nav-link" aria-label="Home page">
+    <header class="position-fixed w-100">
+      <a href="index.html" class="nav-link" aria-label="Home page">
         <div class="logo position-absolute"></div>
       </a>
     </header>
@@ -62,78 +62,9 @@
       <div class="hero-img-and-icons">
         <div class="portrait position-relative mx-auto"></div>
         <div class="name-and-info">
-          <h1 class="display-1 fw-bold text-left">Ralitsa <span class="gradient-text">Taylor</span></h1>
-          <h2 class="sm-heading fw-bold text-left mb-4">The <span class="txt-type gradient-text" data-wait="3000" data-words='["Mid Front-end Dev", "Technical Recruiter", "Project Manager", "Survey Programmer", "Psychologist"]'></span></h2>
+          <h1 class="display-1 fw-bold text-left">Ralitsa <span class="gradient-text fw-bold">Taylor</span></h1>
+          <h2 class="sm-heading fw-bold text-left mb-4">The <span class="txt-type gradient-text fw-bold" data-wait="3000" data-words='["Mid Front-end Dev", "Technical Recruiter", "Project Manager", "Survey Programmer", "Psychologist"]'></span></h2>
         </div>
-
-        <script>
-          // ES6 Class
-          class TypeWriter {
-            constructor(txtElement, words, wait = 3000) {
-              this.txtElement = txtElement;
-              this.words = words;
-              this.txt = '';
-              this.wordIndex = 0;
-              this.wait = parseInt(wait, 10);
-              this.type();
-              this.isDeleting = false;
-            }
-
-            type() {
-              // Current index of word
-              const current = this.wordIndex % this.words.length;
-              // Get full text of current word
-              const fullTxt = this.words[current];
-
-              // Check if deleting
-              if(this.isDeleting) {
-                // Remove char
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-              } else {
-                // Add char
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-              }
-
-              // Insert txt into element
-              this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-              // Initial Type Speed
-              let typeSpeed = 300;
-
-              if(this.isDeleting) {
-                typeSpeed /= 2;
-              }
-
-              // If word is complete
-              if(!this.isDeleting && this.txt === fullTxt) {
-                // Make pause at end
-                typeSpeed = this.wait;
-                // Set delete to true
-                this.isDeleting = true;
-              } else if(this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                // Move to next word
-                this.wordIndex++;
-                // Pause before start typing
-                typeSpeed = 500;
-              }
-
-              setTimeout(() => this.type(), typeSpeed);
-            }
-          }
-
-          // Init On DOM Load
-          document.addEventListener('DOMContentLoaded', init);
-
-          // Init App
-          function init() {
-            const txtElement = document.querySelector('.txt-type');
-            const words = JSON.parse(txtElement.getAttribute('data-words'));
-            const wait = txtElement.getAttribute('data-wait');
-            // Init TypeWriter
-            new TypeWriter(txtElement, words, wait);
-          }
-        </script>
 
         <div class="icons center gap-4 mt-4">
           <a href="https://www.linkedin.com/in/ralitsataylor/" target="_blank" rel="noopener" aria-label="LinkedIn icon">
@@ -172,23 +103,52 @@
         </div>
       </div>  
 
-      
-      <div class="wrapper position-absolute">
-        <input type="checkbox" name="mobile-menu" />
-        <div class="fab"></div>
-        <div class="fac">
-          <a href="about.html"><svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg></a>
-          <a href="work.html"><svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"/></svg></a>
-          <a href="contact.html"><svg class="menu-icons" width-="24" height="24" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/></svg></a>
+      <div class="popup-menu position-absolute">
+        <input type="checkbox" name="mobile-menu" class="w-100 h-100 position-absolute" />
+        <div class="fab center position-relative"></div>
+        <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
+          <a href="about.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>
+            </svg>
+          </a>
+          <a href="work.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"/>
+            </svg>
+          </a>
+          <a href="contact.html">
+            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/>
+            </svg>
+          </a>
         </div>
       </div>
       
-
       <!-- <a href="https://ralitsataylor.github.io/modern-portfolio/dist/Ralitsa_Taylor_Resume.pdf" class="btn btn-lg btn-primary" download="Ralitsa_Taylor_Resume.pdf" role="button" aria-label="Download my resume">Download Resume</a> -->
 
     </main>
 
     <script scr="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/typewriter.js" defer></script>
     <script src="js/main.js" defer></script>
 
   </body>

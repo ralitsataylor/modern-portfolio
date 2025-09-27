@@ -2,21 +2,19 @@
 @use 'sass:color';
 
 :root {
-  --width: 50px;
-  --height: 50px;
-  --border-radius: 100%;
+  --pink: #f864bd;
+  --purple: #7b7beb;
+  --text-color: white;
+  --popup-menu-size: 50px;
+  --border-radius: 50%;
   --icon-color: #7b7beb;
 }
 
-$pink: #f864bd;
-$purple: #7b7beb;
-$bg-color: #1a1a1a;
-$text-color: #ffffff;
-
 @mixin gradient-border {
-  background: linear-gradient(to right, $pink, $purple) border-box;
+  background: linear-gradient(to right, var(--pink), var(--purple)) border-box;
 }
 
+/* check if you need that */
 @mixin easeOut {
   transition: all .3s ease-out;
 }
@@ -37,7 +35,7 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.5;
-  color: $text-color;
+  color: var(--text-color);
   font-family: "Playfair Display", sans-serif !important;
   background: url('../img/fullbackground.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -57,28 +55,27 @@ body {
 }
 
 a {
-  color: $text-color;
+  color: var(--text-color);
   cursor: pointer;
 }
 
 // Headings
 h1, h2, h3 {
   &.sm-heading {
-    padding: .2rem 0;
+    padding: .2rem 0; /* 3.2px 0 */
   }
 }
 
 h2 {
   &.sm-heading {
-    font-size: calc(1.3rem + .9vw);
+    font-size: calc(1.275rem + .9vw); /* 2.4px + .9% of viewport width */
   }
 }
 
 .gradient-text {
   background-clip: text;
   color: rgba(0, 0, 0, 0);
-  font-weight: bold;
-  background-image: linear-gradient(to right, $pink, $purple);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
 }
 
 .center {
@@ -89,38 +86,31 @@ h2 {
 
 header {
   z-index: 2;
-  width: 100%;
   min-height: 5.35rem; /* 85.6px */
-  // background: rgba(26, 26, 26, .5);
-  // box-shadow: 3px 3px 12px rgba(248, 99, 189, .25);
-  // backdrop-filter: blur(40px);
 }
 
 /* Main */
 main {
-  padding: 5.75rem 0 4rem 0;
+  padding: 5.75rem 0 4rem 0; /* 92px 0 64px 0 */
   min-height: calc(100dvh - 5.35rem); /* 85.6px */
   @media (min-width: 768px) {
-    padding-top: 9.5rem;
+    padding-top: 9.5rem; /* 152px */
   }
   @media (min-width: 1200px) {
-    padding-top: 5.75rem;
+    padding-top: 5.75rem; /* 92px */
   }
   &#home-section { 
     .hero-img-and-icons, .name-and-info {
       display: flex;
       flex-direction: column;
-      margin-top: 3rem;
+      margin-top: 3rem; /* 48px */
       .portrait {
-        width: 225px;
-        height: 225px;
+        width: 14.0625rem; /* 225px */
+        height: 14.0625rem; /* 225px */
         background: url('../img/portrait.webp') no-repeat center center;
-        border-radius: 50%;
-        $border: 4px;
+        border-radius: var(--border-radius);
+        $border: .25rem; /* 4px */
         background-clip: padding-box;
-        @media (min-width: 768px) {
-          
-        }
         &:before {
           content: '';
           position: absolute;
@@ -137,55 +127,25 @@ main {
     }
   }
   &#about { 
-    padding: 9rem 2rem 4rem 2rem; 
+    padding: 9rem 2rem 4rem 2rem; /* 144px 32px 64px 32px */
   }
 }
 
 // Logo
 .logo {
   background: url('../img/logo.png') no-repeat;
-  left: .5rem;
+  left: .5rem; /* 8px */
   top: 0;
-  width: 80px;
-  height: 85px;
-  transform: scale(0.7);
+  width: 5rem; /* 80px */
+  height: 5.3125rem; /* 85px */
+  transform: scale(.7);
 }
-
-// Menu Button
-// .menu-btn {
-  // position: absolute;
-  // z-index: 3;
-  // right: 1.25rem;
-  // top: 1.875rem;
-  // cursor: pointer;
-  // @include easeOut;
-
-  // .btn-line {
-  //   width: 28px;
-  //   height: 3px;
-  //   margin: 0 0 5px 0;
-  //   background: $text-color;
-  //   @include easeOut;
-  // }
-
-  // Rotate Into X with Menu Lines
-  // &.close { transform: rotate(180deg);
-  //   .btn-line {
-      // Line 1- Rotate
-      // &:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-      // Line 2 - Hide
-      // &:nth-child(2) { opacity: 0; }
-      // Line 3 - Rotate
-      // &:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
-//     }
-//   }
-// }
 
 /* SVG icons */
 .icons {
   .svg-icons {
     .icon-path {
-      fill: $purple;
+      fill: var(--purple);
       transition: fill .3s ease-out;
     }
     &:hover {
@@ -196,118 +156,13 @@ main {
   }
 }
 
-// Menu Overlay
-// .menu {
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   visibility: hidden;
-//   &.show { 
-//     visibility: visible; 
-//     transition: visibility 0s ease-out .3s;
-//   }
-
-//   &-branding,
-//   &-nav {
-//     display: flex;
-//     flex-flow: column wrap;
-//     align-items: center;
-//     justify-content: center;
-//     float: left;
-//     width: 50%;
-//     height: 100vh;
-//     overflow: hidden;
-//   }
-
-  // Menu Nav
-  // &-nav {
-  //   margin: 0;
-  //   padding: 0;
-  //   background: color.adjust($bg-color, $lightness: 2%);
-  //   list-style-type: none;
-  //   transform: translate3d(0, -100%, 0);
-  //   @include easeOut;
-  //   &.show {
-    // Slide in from top
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  // }
-
-  // Branding Side
-  // &-branding {
-  //   background: $bg-color;
-  //   @include easeOut;
-  //   transform: translate3d(0, 100%, 0);
-  //   &.show {
-  //   // Slide in from bottom
-  //     transform: translate3d(0, 0, 0);
-  //   }
-
-    // Logo
-    // @extend .logo;
-
-  //   .portrait {
-  //     width: 225px;
-  //     height: 225px;
-  //     background: url('../img/portrait.webp');
-  //     border-radius: 50%;
-  //     $border: 4px;
-  //     background-clip: padding-box;
-  //     &:before {
-  //       content: '';
-  //       position: absolute;
-  //       top: 0;
-  //       right: 0;
-  //       bottom: 0;
-  //       left: 0;
-  //       z-index: -1;
-  //       margin: -$border;
-  //       border-radius: inherit;
-  //       @include gradient-border;
-  //     }
-  //   }
-  //   @extend .icons;
-  // }
-
-  // .nav-item {
-  //   transform: translate3d(600px, 0, 0);
-  //   @include easeOut;
-  //   &.show {
-      // Slide in from right
-//       transform: translate3d(0, 0, 0);
-//     }
-//   }
-
-//   .nav-link {
-//     display: inline-block;
-//     position: relative;
-//     font-size: 3rem;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//     padding: 1rem 0;
-//     color: $text-color;
-//     text-decoration: none;
-//     @include easeOut;
-//     &:hover {
-//       @extend .gradient-text;
-//     }
-//   }
-// }
-
-// Delay each nav item slide by 0.1s
-// @for $x from 1 through 4 {
-//   .nav-item:nth-child(#{$x}) {
-//     transition-delay: $x * 0.1s;
-//   }
-// }
-
 /* Floating Action Button */
-.wrapper {
-  width: var(--width);
-  height: var(--height);
+.popup-menu {
+  width: var(--popup-menu-size);
+  height: var(--popup-menu-size); 
   border-radius: var(--border-radius);
-  bottom: -8%;
-  right: 8%;
+  bottom: -9%;
+  right: 7%;
   @media (min-width: 768px) {
     bottom: -6%;
     right: 5%;
@@ -317,83 +172,74 @@ main {
     right: 2%;
   }
   .fab {
-    background: $purple;
-    width: var(--width);
-    height: var(--height);
-    position: relative;
+    background: var(--purple);
+    width: var(--popup-menu-size);
+    height: var(--popup-menu-size);
     z-index: 3;
     border-radius: var(--border-radius);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fab-animation-reverse 0.4s ease-out forwards;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .4); /* 0 2px 4px */
+    animation: fab-animation-reverse .4s ease-out forwards;
     &::before,
     &::after {
       content: "";
       display: block;
       position: absolute;
-      border-radius: 4px;
-      background: #fff;
+      border-radius: .25rem; /* 4px */
+      background: var(--text-color);
     }
     &::before {
-      width: 4px;
-      height: 18px;
+      width: .25rem; /* 4px */
+      height: 1.125rem; /* 18px */
     }
     &::after {
-      width: 18px;
-      height: 4px;
+      width: 1.125rem; /* 18px */
+      height: .25rem; /* 4px */
     }
   }
   /* floating actions container */
   .fac {
-    width: 44px;
-    height: 150px;
-    border-radius: 64px;
-    position: absolute;
-    background: #fff;
+    width: 2.75rem; /* 44px */
+    height: 9.375rem; /* 50px */
+    border-radius: 4rem; /* 64px */
+    background: var(--text-color);
     z-index: 2;
-    padding: 0.5rem 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: .5rem; /* 8px */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .4); /* 0 2px 4px */
     opacity: 0;
-    top: -110px;
-    left: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transition: opacity 0.2s ease-in, top 0.2s ease-in, width 0.1s ease-in;
+    top: -6.875rem; /* -110px */
+    left: .1875rem; /* 3px */
+    transition: opacity .2s ease-in, top .2s ease-in, width .1s ease-in;
     a {
-      color: $purple;
-      opacity: 0.8;
+      color: var(--purple);
+      opacity: .8;
       .menu-icons {
-        fill: $purple;
+        fill: var(--purple);
+        &:hover {
+          fill: url(#linearGradient);
+        }
       }
       &:hover {
-        transition: 0.2s;
+        transition: .2s;
         opacity: 1;
         color: color.adjust(#344955, $blackness: 2%);
       }
     }
   }
   input {
-    height: 100%;
-    width: 100%;
     border-radius: var(--border-radius);
     cursor: pointer;
-    position: absolute;
     z-index: 5;
     opacity: 0;
     &:checked {
       ~ .fab {
-        animation: fab-animation 0.4s ease-out forwards;
+        animation: fab-animation .4s ease-out forwards;
       }
       ~ .fac {
-        width: 44px;
-        height: 150px;
-        animation: fac-animation 0.4s ease-out forwards 0.1s;
-        top: -160px;
-        left: 3px;
+        width: 2.75rem; /* 44px */
+        height: 9.375rem; /* 150px */
+        animation: fac-animation .4s ease-out forwards .1s;
+        top: -10rem; /* -160px */
+        left: .1875rem; /* 3px */
         opacity: 1;
       }
     }
@@ -405,22 +251,22 @@ main {
     transform: rotate(0) scale(1);
   }
   20% {
-    transform: rotate(60deg) scale(0.93);
+    transform: rotate(60deg) scale(.93);
   }
   55% {
-    transform: rotate(35deg) scale(0.97);
+    transform: rotate(35deg) scale(.97);
   }
   80% {
-    transform: rotate(48deg) scale(0.94);
+    transform: rotate(48deg) scale(.94);
   }
   100% {
-    transform: rotate(45deg) scale(0.95);
+    transform: rotate(45deg) scale(.95);
   }
 }
 
 @keyframes fab-animation-reverse {
   0% {
-    transform: rotate(45deg) scale(0.95);
+    transform: rotate(45deg) scale(.95);
   }
   20% {
     transform: rotate(-15deg);
@@ -441,10 +287,10 @@ main {
     transform: scale(1, 1);
   }
   33% {
-    transform: scale(0.95, 1.05);
+    transform: scale(.95, 1.05);
   }
   66% {
-    transform: scale(1.05, 0.95);
+    transform: scale(1.05, .95);
   }
   100% {
     transform: scale(1, 1);
@@ -452,22 +298,17 @@ main {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem;
-  height: 60px;
+  height: 3.75rem; /* 60px */
   background: rgba(26, 26, 26, .5);
-  box-shadow: 3px 3px 12px rgba(248, 99, 189, .25);
+  box-shadow: .1875rem .1875rem .75rem rgba(248, 99, 189, .25); /* 3px 3px 12px */
 }
 
 /** media queries for responsive design **/
 @media (min-width: 768px) {
   h2 {
     &.sm-heading { 
-      padding-left: 35px;
+      padding-left: 2.1875rem; /* 35px */
       font-size: calc(1.325rem + .9vw); 
     }
   }
@@ -476,7 +317,7 @@ footer {
 @media (min-width: 1200px) {
   h2 {
     &.sm-heading { 
-      padding-left: 60px; 
+      padding-left: 2.75rem; /* 44px */
     }
   }
 }
