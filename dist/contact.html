@@ -49,82 +49,38 @@
     </noscript>
   </head>
 
-<body>
+  <body class="position-relative width-100 height-100 fw-normal fst-normal">
 
-  <header>
-    <a href="index.html" class="nav-link" aria-label="Home page">
-      <div class="logo"></div>
-    </a>
+    <header class="position-fixed w-100">
+      <a href="index.html" class="nav-link" aria-label="Home page">
+        <div class="logo position-absolute"></div>
+      </a>
+    </header>
 
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
 
-    <nav class="menu">
-      <div class="menu-branding">
-        <a href="index.html" aria-label="Home page">
-          <div class="logo"></div>
-        </a>
-        <div class="portrait"></div>
+    <main id="contact">
+      <h1 class="lg-heading">Contact <span class="gradient-text">Me</span></h1>
+      <h2 class="sm-heading">This is how you can reach me...</h2>
 
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/ralitsataylor/" target="_blank" rel="noopener" aria-label="LinkedIn icon">
-            <svg class="fab fa-linkedin fa-2x"></svg>
+      <div class="boxes">
+        <div>
+          <a href="#mailgo" data-address="ralitsa.taylor88" data-domain="gmail.com">
+            <span class="gradient-text">Email: </span> ralitsa.taylor88@gmail.com
           </a>
-          <a href="https://github.com/ralitsataylor/" target="_blank" rel="noopener" aria-label="GitHub icon">
-            <svg class="fab fa-github fa-2x"></svg>
-          </a>
-          <a href="https://codepen.io/ralitsataylor/" target="_blank" rel="noopener" aria-label="Codepen icon">
-            <svg class="fab fa-codepen fa-2x"></svg>
-          </a>
-          <a href="https://www.freecodecamp.org/ralitsataylor" target="_blank" rel="noopener" aria-label="Freecodecamp icon"><svg class="fab fa-free-code-camp fa-2x"></svg></a>
         </div>
-
+        <div><span class="gradient-text">Phone: </span> (+359) 899 714 837</div>
+        <div><span class="gradient-text">Adress: </span> Burnley, Lancashire, UK</div>
       </div>
 
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" aria-label="Home page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link" aria-label="About me page">About me</a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link" aria-label="My work page">My work</a>
-        </li>
-        <li class="nav-item current">
-          <a href="contact.html" class="nav-link" aria-label="Contact me page">Contact me</a>
-        </li>
-      </ul>
+    </main>
 
-    </nav>
-  </header>
+    <footer id="footer" class="center fw-bold p-3">
+      <p class="lead fw-bold m-0 gradient-text"><a href="http://ralitsataylor.github.io/modern-portfolio/" class="fw-bold text-decoration-none" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
+    </footer>
 
-  <main id="contact">
-    <h1 class="lg-heading">Contact <span class="gradient-text">Me</span></h1>
-    <h2 class="sm-heading">This is how you can reach me...</h2>
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailgo@0.6.5/dist/mailgo.min.js"></script>
 
-    <div class="boxes">
-      <div>
-        <a href="#mailgo" data-address="ralitsa.taylor88" data-domain="gmail.com">
-          <span class="gradient-text">Email: </span> ralitsa.taylor88@gmail.com
-        </a>
-      </div>
-      <div><span class="gradient-text">Phone: </span> (+359) 899 714 837</div>
-      <div><span class="gradient-text">Adress: </span> Burnley, Lancashire, UK</div>
-    </div>
-
-  </main>
-
-  <footer id="footer" class="center fw-bold p-3">
-    <p class="lead fw-bold m-0 gradient-text"><a href="http://ralitsataylor.github.io/modern-portfolio/" class="fw-bold text-decoration-none" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
-  </footer>
-
-  <script scr="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="js/main.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.6.5/dist/mailgo.min.js"></script>
-
-</body>
+  </body>
 </html>
