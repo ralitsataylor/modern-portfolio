@@ -36,19 +36,18 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-color);
-  font-family: "Playfair Display", sans-serif !important;
+  font-family: "Playfair Display", sans-serif;
   background: url('../img/fullbackground.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100dvh;
   &:before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     z-index: -1;
     background: rgba(26, 26, 26, .95);   
   }
