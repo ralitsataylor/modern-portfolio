@@ -90,9 +90,6 @@ class PopupMenuElement extends HTMLElement {
               }
             }
           }
-          label {
-            display: none;
-          }
           input {
             width: 100%;
             height: 100%;
@@ -166,8 +163,7 @@ class PopupMenuElement extends HTMLElement {
         }
       </style>
       <div class="popup-menu">
-        <label for="popup-menu"></label>
-        <input type="checkbox" name="popup-menu" />
+        <input type="checkbox" name="popup-menu" aria-label="Popup menu" />
         <div class="fab"></div>
         <div class="fac">
           <a href="index.html" aria-label="Home page link">
