@@ -37,6 +37,9 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+    <!-- Preload hero image -->
+    <link rel="preload" href="img/hero.webp" as="image" type="image/webp" fetchpriority="high">
+
     <!-- Main stylesheets: Bootstrap and my own styles -->
     <!-- <link rel="stylesheet" href="purged-bootstrap.min.css" fetchpriority="high"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" fetchpriority="high">
@@ -50,13 +53,8 @@
 
   <body class="position-relative fw-normal fst-normal">
 
-    <!-- start of header section -->
-    <header class="position-fixed w-100">
-      <a href="index.html" class="nav-link" aria-label="Home page">
-        <div class="logo position-absolute"></div>
-      </a>
-    </header>
-    <!-- end of header section -->
+    <!-- custom header -->
+    <my-header></my-header>
 
     <!-- start of main section -->
     <main id="about">
@@ -65,7 +63,7 @@
       <h2 class="sm-heading">Let me tell you a few things...</h2>
 
       <div class="about-info">
-        <div class="portrait bio-image"></div>
+        <div class="hero-img position-relative mx-auto"></div>
         <div class="icons">
           <svg class="fab fa-html5 fa-2x"></svg>
           <svg class="fab fa-css3-alt fa-2x"></svg>
@@ -82,114 +80,21 @@
           <p>I am a proactive "can-do" professional with <span class="gradient-text">5 ½ years</span> of experience. Building state-of-the-art, easy to use, user-friendly websites is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements. I am open minded and willing to learn. I am a person with excellent communication and negotiation skills, who works well individually and/or in a team. I have experience in dynamic environments and I am enthusiastic regarding overcoming challenges and reaching targets.</p>
         </div>
 
-        <div class="job job-1">
-          <h3><svg class="fas fa-link"></svg> <a href="https://www.economedia.bg/" target="_blank">Economedia</a></h3>
-          <p><svg class="fas fa-calendar-alt"></svg> Sept 2019 – ongoing</p>
-          <h4><svg class="fas fa-user-tie"></svg> Front-end Developer</h4>
-          <p><svg class="fas fa-tools"></svg> HTML5, CSS3, JavaScript (+jQuery), SEO [Tools and Extensions], AMP Validator</p>
-        </div>
-
-        <div class="job job-2">
-          <h3><svg class="fas fa-link"></svg> <a href="https://www.hpe.com/emea_europe/en/home.html" target="_blank">HPE</a> (through <svg class="fas fa-link"></svg> <a href="https://www.manpower.bg/" target="_blank">ManPower</a>)</h3>
-          <p><svg class="fas fa-calendar-alt"></svg> Aug 2018 – Aug 2019</p>
-          <h4><svg class="fas fa-user-tie"></svg> Project Manager (Contractor)</h4>
-          <p><svg class="fas fa-tools"></svg> SFDC Platform</p>
-          <p><svg class="fas fa-star"></svg> <a href="https://drive.google.com/file/d/1uWjRBR9S6oCSRVpH_zPmS9cBB-3cHkSk/view" target="_blank">Reference letter from Michaela Turner (HPE, WW Pursuit & Delivery Governance EMEA Lead)</a></p>
-        </div>
-
-        <div class="job job-3">
-          <h3><svg class="fas fa-star"></svg> Freelance (Personal Project)</h3>
-          <p><svg class="fas fa-calendar-alt"></svg> Mar 2018 - Mar 2020 </p>
-          <h4><svg class="fas fa-user-tie"></svg> Project Manager & Co-Programmer</h4>
-          <p><svg class="fas fa-tools"></svg> Bootstrap 4.5.0, Gulp 4.0.2, HTML5, CSS3 (SASS), JavaScript (+jQuery)</p>
-        </div>
-
-        <div class="job job-4">
-          <h3><svg class="fas fa-link"></svg> <a href="http://www.cquest-rc.com/" target="_blank">cQuest Research & Consulting</a></h3>
-          <p><svg class="fas fa-calendar-alt"></svg> May 2017 – Mar 2018</p>
-          <h4><svg class="fas fa-user-tie"></svg> Project Manager</h4>
-          <p><svg class="fas fa-tools"></svg> HTML & CSS, JS(+jQuery), XML, Python</p>
-          <p><svg class="fas fa-star"></svg> <a href="https://drive.google.com/file/d/1kvVU-CWc0BinaSIYnuy88lcgqgQwdxp8/view" target="_blank">Reference Letter from Kamen Valchev [Former TL]</a></p>
-        </div>
-
-        <div class="job job-5">
-          <h3><svg class="fas fa-link"></svg> <a href="http://www.cquest-rc.com/" target="_blank">cQuest Research & Consulting</a></h3>
-          <p><svg class="fas fa-calendar-alt"></svg> Jul 2016 - Apr 2017 </p>
-          <h4><svg class="fas fa-user-tie"></svg> Survey Programmer</h4>
-          <p><svg class="fas fa-tools"></svg> HTML & CSS, JS(+jQuery), and from Nov 2016 => XML and Python </p>
-        </div>
-
-        <div class="job job-6">
-          <h3><svg class="fas fa-link"></svg> <a href="https://www.epam.com" target="_blank">EPAM Systems</a></h3>
-          <p><svg class="fas fa-calendar-alt"></svg> Dec 2015 – Apr 2016</p>
-          <h4><svg class="fas fa-user-tie"></svg> IT Recruiter</h4>
-          <p><svg class="fas fa-star"></svg> I was responsible for roles as BA, Cloud Solution Architect, Infrastructure Automation Architect (Cloud+Linux), Senior Release and DevOps Engineers (Linux), and I assisted for: Support, Java, C#; C# with Java).</p>
-        </div>
-
       </div>
 
-      <a href="https://ralitsataylor.github.io/modern-portfolio/dist/Ralitsa_Taylor_Resume.pdf" class="btn btn-lg btn-primary" download="Ralitsa_Taylor_Resume.pdf" role="button" aria-label="Download my resume">Download Resume</a>
-
-      <!-- start of popup-menu section -->
-      <div class="popup-menu position-absolute">
-        <input type="checkbox" name="mobile-menu" class="w-100 h-100 position-absolute" />
-        <div class="fab center position-relative"></div>
-        <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
-
-          <!-- start of about me page link -->
-          <a href="about.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>
-            </svg>
-          </a>
-          <!-- end of about me page link -->
-
-          <!-- start of work experience page link -->
-          <a href="work.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"/>
-            </svg>
-          </a>
-          <!-- end of work experience page link -->
-
-          <!-- start of contact me page link -->
-          <a href="contact.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/>
-            </svg>
-          </a>
-          <!-- end of contact me page link -->
-
-        </div>
-      </div>
-      <!-- end of popup-menu section -->
+      <!-- custom popup-menu -->
+      <popup-menu></popup-menu>
 
     </main>
     <!-- end of main section -->
 
-    <footer id="footer" class="center fw-bold p-3">
-      <p class="lead fw-bold m-0 gradient-text"><a href="http://ralitsataylor.github.io/modern-portfolio/" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
-    </footer>
+    <!-- custom footer -->
+    <my-footer></my-footer>
 
     <script scr="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/header.js"></script>
+    <script src="js/popup-menu.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/main.js" defer></script>
 
   </body>
