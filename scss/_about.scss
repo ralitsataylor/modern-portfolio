@@ -1,96 +1,47 @@
-$bg-color: #1a1a1a;
-$pink: #f864bd;
-$purple: #7b7beb;
-$text-color: #ffffff;
-
-@mixin easeOut {
-  transition: all .5s ease-out;
+:root {
+  --pink: #f864bd;
+  --purple: #7b7beb;
+  --text-color: white;
 }
 
 #about {
   .about-info {
-    display: grid;
-    grid-gap: 30px;
     grid-template-areas:
-    'bioimage bio bio'
-    'icons bio bio'
-    'job1 job2 job3'
-    'job4 job5 job6';
-    grid-template-columns: repeat(3, 1fr);
-
-    h3, p { font-size: 2rem; }
-
-    .portrait {
-      width: 225px;
-      height: 225px;
-      background: url('../img/portrait.webp');
-      border-radius: 50%;
-      border: 3px solid $purple;
+    'heroimage'
+    'icons'
+    'bio';
+    grid-template-columns: 1fr;
+    h3, p { 
+      font-size: 2rem; 
     }
-
-    .bio-image {
-      grid-area: bioimage;
+    .hero-image {
+      grid-area: heroimage;
       margin: auto;
     }
-
     .icons {
       text-align: center;
       grid-area: icons;
       margin: auto;
-      color: $purple;
-      @include easeOut;
+      color: var(--purple);
+      transition: all .5s ease-out
     }
-
     .bio {
       grid-area: bio;
       font-size: 1.5rem;
     }
-
-    .job-1 { grid-area: job1; }
-    .job-2 { grid-area: job2; }
-    .job-3 { grid-area: job3; }
-    .job-4 { grid-area: job4; }
-    .job-5 { grid-area: job5; }
-    .job-6 { grid-area: job6; }
-
-    .job {
-      background: $bg-color;
-      padding: 3rem;
-      border-bottom: 3px solid $purple;
-      h3, h4, p {
-        font-size: 1.8rem;
-        font-weight: bold;
-      }
-      h3, h4, a { color: $purple; }
-      a { text-decoration: underline; }
-    }
   }
 }
 
-// Tablets & Small Laptops
-@media screen and (max-width: 767px) {
+/** media queries for responsive design **/
+@media (min-width: 768px) {
   #about {
-    .about-info {
-      grid-template-areas:
-      'bioimage'
-      'icons'
-      'bio'
-      'job1'
-      'job2'
-      'job3'
-      'job4'
-      'job5'
-      'job6';
-      grid-template-columns: 1fr;
-
-      .portrait {
-        background: url('../img/portrait_small.webp');
-        width: 150px;
-        height: 150px;
-        margin-top: 3rem;
-        border-radius: 50%;
-        border: 3px solid $purple;
-      }
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'heroimage bio bio'
+    'icons bio bio';
+    grid-template-columns: repeat(3, 1fr);
     }
   }
 }
