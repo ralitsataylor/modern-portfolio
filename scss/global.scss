@@ -11,7 +11,7 @@
 }
 
 @mixin gradient-border {
-  background: linear-gradient(to right, var(--pink), var(--purple)) border-box;
+  background: linear-gradient(to right, var(--pink), var(--purple));
 }
 
 /* check if you need that */
@@ -72,10 +72,7 @@ header {
 
 /* Logo */
 .logo {
-  width: 5rem; /* 80px */
-  height: 5.3125rem; /* 85px */
   transform: scale(.7);
-  background: url('../img/logo.png') no-repeat;
   &:hover {
     transform: scale(.75);
     transition: transform .2s ease-in-out;
@@ -102,24 +99,17 @@ main {
 }
 
 /* Hero image */
-.hero-img {
-  width: 14.0625rem; /* 225px */
-  height: 14.0625rem; /* 225px */
-  background: url('../img/hero.webp') no-repeat center center;
+.hero-img-container {
+  padding: 2px; /* Border thickness */
+  @include gradient-border;
   border-radius: var(--border-radius);
-  $border: .25rem; /* 4px */
-  background-clip: padding-box;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -$border;
-    border-radius: inherit;
-    @include gradient-border;
+  box-sizing: border-box;
+  .hero-img {
+    border: 2px solid transparent;
+    width: 14.0625rem; /* 225px */
+    height: 14.0625rem; /* 225px */
+    border-radius: var(--border-radius);
+    object-fit: cover; /* Ensures image fits within circular shape */
   }
 }
 
