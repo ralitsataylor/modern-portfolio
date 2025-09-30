@@ -4,7 +4,8 @@
   --text-color: white;
 }
 
-#about {
+#about-me {
+  padding: 9rem 2rem 4rem 2rem; /* 144px 32px 64px 32px */
   .about-info {
     grid-template-areas:
     'heroimage'
@@ -14,7 +15,7 @@
     h3, p { 
       font-size: 2rem; 
     }
-    .hero-image {
+    .hero-img {
       grid-area: heroimage;
       margin: auto;
     }

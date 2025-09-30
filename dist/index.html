@@ -52,33 +52,39 @@
     </noscript>
   </head>
 
-  <body class="position-relative overflow-hidden fw-normal fst-normal">
+  <body class="position-relative fw-normal fst-normal">
 
-    <!-- custom header -->
-    <my-header></my-header>
+    <!-- start of header -->
+    <header class="w-100">
+      <a href="index.html" class="nav-link" aria-label="Home page">
+        <div class="logo"></div>
+      </a>
+    </header>
+    <!-- end of header -->
 
-    <!-- start of main section -->
+    <!-- start of main -->
     <main id="home-section" class="center position-relative my-auto">
 
-      <!-- start of hero-and-socials section -->
+      <!-- start of hero-and-socials -->
       <div class="hero-and-socials d-flex flex-column">
 
-        <!-- hero-img section -->
+        <!-- hero-img -->
         <div class="hero-img position-relative mx-auto"></div>
 
-        <!-- start of name-and-info section -->
+        <!-- start of name-and-info -->
         <div class="name-and-info d-flex flex-column">
           <h1 class="display-1 fw-bold text-left">Ralitsa <span class="gradient-text fw-bold">Taylor</span></h1>
           <h2 class="sm-heading fw-bold text-left mb-4">The <span class="txt-type gradient-text fw-bold" data-wait="3000" data-words='["Mid Front-end Dev", "Technical Recruiter", "Project Manager", "Survey Programmer", "Psychologist"]'></span></h2>
         </div>
-        <!-- end of name-and-info section -->
+        <!-- end of name-and-info -->
 
-        <!-- start of social-icons section -->
+        <!-- start of social-icons -->
         <div class="social-icons center gap-4 mt-4">
 
           <!-- start of linkedin profile link -->
-          <a href="https://www.linkedin.com/in/ralitsataylor/" target="_blank" rel="noopener" aria-label="LinkedIn icon">
-            <svg class="svg-icons" width="40" height="42" viewBox="0 32 448 448" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://www.linkedin.com/in/ralitsataylor/" target="_blank" rel="noopener" aria-label="LinkedIn profile link">
+            <svg class="svg-icon" width="40" height="42" viewBox="0 32 448 448" xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn</title>
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
@@ -91,8 +97,9 @@
           <!-- end of linkedin profile link -->
 
           <!-- start of github profile link -->
-          <a href="https://github.com/ralitsataylor/" target="_blank" rel="noopener" aria-label="GitHub icon">
-            <svg class="svg-icons" width="42" height="42" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://github.com/ralitsataylor/" target="_blank" rel="noopener" aria-label="GitHub profile link">
+            <svg class="svg-icon" width="42" height="42" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+              <title>GitHub</title>
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
@@ -105,8 +112,9 @@
           <!-- end of github profile link -->
 
           <!-- start of codepen profile link -->
-          <a href="https://codepen.io/ralitsataylor/" target="_blank" rel="noopener" aria-label="Codepen icon">
-            <svg class="svg-icons" width="42" height="42" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://codepen.io/ralitsataylor/" target="_blank" rel="noopener" aria-label="CodePen profile link">
+            <title>CodePen</title>
+            <svg class="svg-icon" width="42" height="42" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
@@ -119,19 +127,86 @@
           <!-- end of codepen profile link -->
 
         </div>
-        <!-- start of social-icons section -->
+        <!-- start of social-icons -->
 
       </div>  
-      <!-- end of hero-and-socials section -->
+      <!-- end of hero-and-socials -->
 
     </main>
-    <!-- end of main section -->
+    <!-- end of main -->
 
-    <!-- custom popup-menu -->
-    <popup-menu></popup-menu>
+    <!-- start of popup-menu -->
+    <div class="popup-menu position-fixed">
+      <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
+      <div class="fab center position-relative"></div>
+      <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
 
-    <script src="js/header.js" defer></script>
-    <script src="js/popup-menu.js" defer></script>
+        <!-- start of home page link -->
+        <a href="index.html" aria-label="Home page link">
+          <svg class="svg-icon" width="26" height="26" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <title>Home page link</title>
+            <defs>
+              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+              </linearGradient>
+            </defs>
+            <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+            <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+          </svg>
+        </a>
+        <!-- end of home page link -->
+
+        <!-- start of about me page link -->
+        <a href="about.html" aria-label="About me page link">
+          <svg class="svg-icon" width="26" height="26" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <title>About me page link</title>
+            <defs>
+              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+              </linearGradient>
+            </defs>
+            <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+        </a>
+        <!-- end of about me page link -->
+
+        <!-- start of my projects page link -->
+        <a href="projects.html" aria-label="My projects page link">
+          <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>My projects page link</title>
+            <defs>
+              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+              </linearGradient>
+            </defs>
+            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
+          </svg>
+        </a>
+        <!-- end of my projects page link -->
+
+        <!-- start of contact me page link -->
+        <a href="contact.html" aria-label="Contact me page link">
+          <svg class="svg-icon" width="26" height="26" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <title>Contact me page link</title>
+            <defs>
+              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+              </linearGradient>
+            </defs>
+            <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
+          </svg>
+        </a>
+        <!-- end of contact me page link -->
+
+      </div>
+    </div>
+    <!-- end of popup-menu -->
+
     <script src="js/typewriter.js" defer></script>
 
   </body>
