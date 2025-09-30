@@ -63,36 +63,56 @@
     <!-- end of header section -->
 
     <!-- start of main section -->
-    <main id="about-me">
+    <main id="about-me" class="d-flex flex-column text-center">
 
-      <h1 class="lg-heading">About <span class="gradient-text">Me</span></h1>
+      <h1 class="display-2">About <span class="gradient-text">Me</span></h1>
       <h2 class="sm-heading">Let me tell you a few things...</h2>
 
-      <div class="about-info">
+      <!-- start of hero-img -->
+      <div class="hero-img-container position-relative mx-auto mt-4">
+        <img src="img/hero.webp" width="225" height="225" class="hero-img" alt="Hero image" loading="eager" fetchpriority="high">
+      </div> 
+      <!-- end of hero-img -->
 
-        <!-- start of hero-img -->
-        <div class="hero-img-container position-relative mx-auto">
-          <img src="img/hero.webp" width="225" height="225" class="hero-img" alt="Hero image" loading="eager" fetchpriority="high">
-        </div> 
-        <!-- end of hero-img -->
+      <!-- start of about-info -->
+      <div class="about-info d-flex flex-column">
 
-        <div class="icons">
-          <svg class="fab fa-html5 fa-2x"></svg>
-          <svg class="fab fa-css3-alt fa-2x"></svg>
-          <svg class="fab fa-sass fa-2x"></svg>
-          <svg class="fab fa-js-square fa-2x"></svg>
-          <svg class="fab fa-bootstrap fa-2x"></svg>
-          <svg class="fab fa-git-alt fa-2x"></svg>
-          <svg class="fab fa-gulp fa-4x"></svg>
-          <svg class="fab fa-python fa-2x"></svg>
+        <!-- start of skill-icons -->
+        <div class="skill-icons mt-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="32" height="32" alt="VSCode icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg" width="32" height="32" alt="WebStorm icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="32" height="32" alt="HTML5 icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="32" height="32" alt="CSS3 icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" width="32" height="32" alt="SASS icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="32" height="32" alt="TailWindCSS icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="32" height="32" alt="JavaScrip icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" width="32" height="32" alt="jQuery icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="34" height="34" alt="Bootstrap icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="32" height="32" alt="Git icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" width="40" height="38" alt="Gulp icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" width="32" height="32" alt="Vue.js icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="32" height="32" alt="TypeScript icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="32" height="32" alt="Node.js icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="30" height="32" alt="MongoDB icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" width="36" height="36" alt="Mongoose icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="32" height="32" alt="PostMan" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" width="35" height="35" alt="FireBase icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" width="35" height="35" alt="Netlify icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="32" height="32" alt="Figma icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="PhotoShop icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" width="32" height="32" alt="XD icon" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" width="32" height="32" alt="JIRA icon" loading="lazy">
         </div>
+        <!-- end of skill-icons -->
 
-        <div class="bio">
-          <h3 class="gradient-text">BIO</h3>
-          <p>I am a proactive "can-do" professional with <span class="gradient-text">5 ½ years</span> of experience. Building state-of-the-art, easy to use, user-friendly websites is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements. I am open minded and willing to learn. I am a person with excellent communication and negotiation skills, who works well individually and/or in a team. I have experience in dynamic environments and I am enthusiastic regarding overcoming challenges and reaching targets.</p>
+        <!-- start of bio -->
+        <div class="bio mt-5">
+          <p class="sm-heading">I am a proactive "can-do" professional with <span class="gradient-text">5 ½ years</span> of experience. Building state-of-the-art, easy to use, user-friendly websites is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements. I am open minded and willing to learn. I am a person with excellent communication and negotiation skills, who works well individually and/or in a team. I have experience in dynamic environments and I am enthusiastic regarding overcoming challenges and reaching targets.</p>
         </div>
+        <!-- end of bio -->
 
       </div>
+      <!-- end of about-info -->
 
       <!-- start of popup-menu section -->
     <div class="popup-menu position-fixed">
