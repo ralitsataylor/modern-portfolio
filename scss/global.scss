@@ -56,9 +56,11 @@ body {
 /* Header */
 header {
   z-index: 20;
-  min-height: 5.71875rem; /* 91.5px */
+  // min-height: 5.71875rem; /* 91.5px */
+  min-height: 5.5rem; /* 88px */
   a {
-    min-height: 5.71875rem; /* 91.5px */
+    // min-height: 5.71875rem; /* 91.5px */
+    min-height: 5.5rem; /* 88px */
   }
 }
 
@@ -71,13 +73,13 @@ header {
 }
 
 /* Logo */
-.logo {
-  transform: scale(.7);
-  &:hover {
-    transform: scale(.75);
-    transition: transform .2s ease-in-out;
-  }
-}
+// .logo {
+//   transform: scale(.7);
+//   &:hover {
+//     transform: scale(.75);
+//     transition: transform .2s ease-in-out;
+//   }
+// }
 
 a {
   color: var(--text-color);
