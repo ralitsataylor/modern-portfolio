@@ -37,7 +37,8 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <!-- Preload full-background image -->
+    <!-- Preload logo and full-background images -->
+    <link rel="preload" href="img/logo.png" as="image" type="image/png" fetchpriority="high">
     <link rel="preload" href="img/full-background.jpg" as="image" type="image/jpg" fetchpriority="high">
 
     <!-- Main stylesheets: Bootstrap and my own styles -->
@@ -55,9 +56,9 @@
   <body class="projects position-relative fw-normal fst-normal">
 
     <!-- start of header section -->
-    <header class="position-fixed w-100">
+    <header class="w-100">
       <a href="index.html" class="nav-link" aria-label="Home page">
-        <img src="img/logo.png" width="80" height="85" class="logo" alt="Logo" loading="eager" fetchpriority="high">
+        <div class="logo"></div>
       </a>
     </header>
     <!-- end of header section -->
