@@ -1,5 +1,117 @@
 :root {
   --pink: #f864bd;
   --purple: #7b7beb;
-  --text-color: white;
+  --dark-overlay: rgba(26,26,26,.5);
+}
+
+#about-me {
+  @media (min-width: 1200px) {
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+  }
+}
+.hero-and-skills {
+  @media (min-width: 1200px) {
+    min-width: 600px;
+  }
+  .skill-icons {
+    .skill-icon {
+      margin: 2px;
+      @media (min-width: 1200px) {
+        margin: 8px;
+      }
+    }
+
+    /* Pulsing animation keyframes */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    /* Glow-box-parent: Base glow and pulse */
+    .glow-box-parent {
+      width: 39px;
+      height: 39px;
+      border-radius: .5rem; /* 8px */
+      animation: pulse 2s infinite;
+      transition: all 0.3s ease;
+      /* Outer glow: Multi-layer box-shadow for neon effect */
+      box-shadow: 
+        0 0 5px var(--dark-overlay),
+        0 0 10px var(--dark-overlay),
+        0 0 15px var(--dark-overlay),
+        inset 0 0 5px rgba(255, 255, 255, .5);
+      /* Inner glow via filter */
+      filter: drop-shadow(0 0 5px var(--dark-overlay));
+      @media (min-width: 1200px) {
+        width: 50px;
+        height: 50px;
+      }
+      /* Icon image inside (scale to fit) */
+      .icon-img {
+        filter: brightness(1.2); /* Slight boost for visibility in glow */
+      }
+      /* Show tooltip on click for mobile and on hover for desktop */
+      &:hover {
+        /* Stronger inner glow */
+        filter: drop-shadow(0 0 10px white);
+        /* 3D tilt for depth */
+        transform: perspective(1000px) rotateX(10deg) rotateY(10deg) scale(1.1);
+        /* Pause pulse on hover for focus */
+        animation-play-state: paused;
+        .tooltip {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+      /* Enhance focus for accessibility */
+      &:focus {
+        box-shadow: 
+          0 0 10px #f3f3f3,
+      }
+      /* Tooltip styles */
+      .tooltip {
+        top: -50px;
+        background: #1a1a1a;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        /* Downward arrow for tooltip */
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -7px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 8px 8px 0 8px;
+          border-color: #1a1a1a transparent transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+.bio-text {
+  @media (min-width: 1200px) {
+    font-size: 1.875rem !important; /* 30px */
+  }
+  @media (min-width: 1600px) {
+    font-size: 1.8975rem !important; /* 30px */
+  }
 }

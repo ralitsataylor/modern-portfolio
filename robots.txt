@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ralitsataylor.github.io/modern-portfolio/sitemap.xml

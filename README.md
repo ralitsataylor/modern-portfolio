@@ -77,25 +77,27 @@ Mobile:
                                                                                                                                               
 # 🛠️ Built with:
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white/)
-<img src="./dist/img/svgs/git.svg?sanitize=true" alt="Git icon" loading="lazy"> ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white/)                                                                                                                                              
-![HTML5](https://img.shields.io/badge/html5-%23FFFFFF.svg?style=for-the-badge&logo=html5&logoColor=white/) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white/) <img src="./dist/img/svgs/sass.svg?sanitize=true" alt="Sass icon" loading="lazy"> ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E/) <img src="./dist/img/svgs/bootstrap.svg?sanitize=true" alt="Bootstrap icon" loading="lazy">            
+<img src="./dist/img/svgs-for-readme-md/git.svg?sanitize=true" alt="Git icon" loading="lazy"> ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white/)                                                                                                                                              
+![HTML5](https://img.shields.io/badge/html5-%23FFFFFF.svg?style=for-the-badge&logo=html5&logoColor=white/) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white/) <img src="./dist/img/svgs-for-readme-md/sass.svg?sanitize=true" alt="Sass icon" loading="lazy"> ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E/) <img src="./dist/img/svgs-for-readme-md/bootstrap.svg?sanitize=true" alt="Bootstrap icon" loading="lazy">            
 🔨 SCSS Files [Responsiveness, Grid template areas, Flex Layout, transitions, mixins, etc.]                                                      
 ⛏️ [Google Font: Playfair Display](https://fonts.google.com/specimen/Playfair+Display/)                                                          
 🪓 [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)                                                             
-🪛 [Bootstrap v5.3 Icons](https://icons.getbootstrap.com/)                                                                                       
-🔩 [Bootstrap v5.3 Card](https://getbootstrap.com/docs/5.3/components/card/)                                                                    
+🪛 [Dev Icons](https://devicon.dev/)                                                                                                                 
+🔩                                                                    
 
 # ✨ Features:
-✅ Brendan Eich's full Wikipedia biography showcased in a modern way                                                                              
+✅ A modern Bootstrap Portfolio Website                                                                              
 ✅ Custom-styled Timeline with elegant Bootstrap Cards                                                                                         
 ✅ Reference to Brendan Eich's Wikipedia Page                                                                                                     
 ✅ Custom-styled Mr. Eich's Famous Quote                                                                                                          
 ✅ Related Social and Info Links                   
-✅ Stylish scroll-to-top button                                                                                                                   
-✅ manifest.json                                                                                                                                 
+✅ Stylish Popup Menu                                                                                                                                  
+✅ manifest.json                                                                                                                                       
+✅ sitemap.xml                                                                                                                                         
+✅ robots.txt                                                                                                                                         
 
 # 🧰 Online resources and tools:
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white/) <img src="./dist/img/svgs/stackoverflow.svg?sanitize=true" alt="StackOverflow icon" loading="lazy"> ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white/) ![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white/) ![Wikipedia](https://img.shields.io/badge/Wikipedia-%23000000.svg?style=for-the-badge&logo=wikipedia&logoColor=white/)                  
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white/) <img src="./dist/img/svgs-for-readme-md/stackoverflow.svg?sanitize=true" alt="StackOverflow icon" loading="lazy"> ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white/) ![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white/) ![Wikipedia](https://img.shields.io/badge/Wikipedia-%23000000.svg?style=for-the-badge&logo=wikipedia&logoColor=white/)                  
 🖼️ [Photopea [Online Photo Editor]](https://www.photopea.com/)                                                                        
 🪄 [svg-to-png & svg minification](https://www.svgviewer.dev/)     
 💫 [svg online cropping tool](https://svgcrop.com/)                                                          

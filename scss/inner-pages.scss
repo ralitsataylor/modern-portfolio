@@ -1,0 +1,31 @@
+.about-me, .projects, .contact {
+  header {
+    z-index: 20;
+    box-shadow: 3px 3px 12px rgba(248, 99, 189, .25);
+    backdrop-filter: blur(40px);
+  }
+}
+
+.important-el {
+  background: rgba(26, 26, 26, .5);
+  box-shadow: .1875rem .1875rem .75rem rgba(248, 99, 189, .25); /* 3px 3px 12px */
+}
+
+.highlight {
+  padding: 1rem;
+  border-radius: 1rem;
+  @extend .important-el;
+}
+
+footer {
+  font-size: 2rem;
+  height: 3.75rem; /* 60px */
+  @extend .important-el;
+  @media (max-width: 767px) {
+    p {
+      &.lead {
+        font-size: 1.125rem !important;
+      }
+    }
+  }
+}

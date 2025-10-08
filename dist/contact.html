@@ -5,24 +5,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FCC: Build a Personal Portfolio Webpage</title>
+    <title>Modern Portfolio</title>
     <meta name="theme-color" content="#7b7beb">
-    <meta name="description" content="FCC: Build a Personal Portfolio Webpage">
+    <meta name="description" content="Modern Portfolio">
     <meta name="web_author" content="Ralitsa Taylor">
     <link rel="canonical" href="https://ralitsataylor.github.io/modern-portfolio/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ralitsataylor.github.io/modern-portfolio/">
-    <meta property="og:title" content="FCC: Build a Personal Portfolio Webpage">
-    <meta property="og:description" content="FCC: Build a Personal Portfolio Webpage">
+    <meta property="og:title" content="Modern Portfolio">
+    <meta property="og:description" content="Modern Portfolio">
     <meta property="og:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://ralitsataylor.github.io/modern-portfolio/">
-    <meta name="twitter:title" content="FCC: Build a Personal Portfolio Webpage">
-    <meta name="twitter:description" content="FCC: Build a Personal Portfolio Webpage">
+    <meta name="twitter:title" content="Modern Portfolio">
+    <meta name="twitter:description" content="Modern Portfolio">
     <meta name="twitter:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Icons -->
@@ -79,49 +79,69 @@
       </div>
 
       <!-- start of popup-menu section -->
-      <div class="popup-menu position-absolute">
-        <input type="checkbox" name="mobile-menu" class="w-100 h-100 position-absolute" />
+      <div class="popup-menu position-fixed">
+        <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
         <div class="fab center position-relative"></div>
         <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
 
-          <!-- start of about me page link -->
-          <a href="about.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <!-- start of home page link -->
+          <a href="index.html" aria-label="Home page link">
+            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <title>Home page link</title>
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
                   <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
                 </linearGradient>
               </defs>
-              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>
+              <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+              <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+            </svg>
+          </a>
+          <!-- end of home page link -->
+
+          <!-- start of about me page link -->
+          <a href="about.html" aria-label="About me page link">
+            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <title>About me page link</title>
+              <defs>
+                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                </linearGradient>
+              </defs>
+              <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
             </svg>
           </a>
           <!-- end of about me page link -->
 
-          <!-- start of work experience page link -->
-          <a href="work.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <!-- start of my projects page link -->
+          <a href="projects.html" aria-label="My projects page link">
+            <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>My projects page link</title>
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
                   <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
                 </linearGradient>
               </defs>
-              <path class="icon-path" d="M128 480h256V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v400zm64-384h128v32H192V96zm320 80v256c0 26.5-21.5 48-48 48h-48V128h48c26.5 0 48 21.5 48 48zM96 480H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48h48v352z"/>
+              <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
             </svg>
           </a>
-          <!-- end of work experience page link -->
+          <!-- end of my projects page link -->
 
           <!-- start of contact me page link -->
-          <a href="contact.html">
-            <svg class="menu-icons" width-="24" height="24" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+          <a href="contact.html" aria-label="Contact me page link">
+            <svg class="svg-icon" width="28" height="28" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <title>Contact me page link</title>
               <defs>
                 <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
                   <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
                 </linearGradient>
               </defs>
-              <path class="icon-path" d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/>
+              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
             </svg>
           </a>
           <!-- end of contact me page link -->
@@ -134,7 +154,7 @@
     <!-- end of main section -->
 
     <footer id="footer" class="center fw-bold p-3">
-      <p class="lead fw-bold m-0 gradient-text"><a href="http://ralitsataylor.github.io/modern-portfolio/" class="fw-bold text-decoration-none" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
+      <p class="lead fw-bold m-0 gradient-text"><a href="https://github.com/ralitsataylor/vue-portfolio" title="Visit my modern Vue.js Portfolio" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/mailgo@0.6.5/dist/mailgo.min.js" defer></script>
