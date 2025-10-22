@@ -1,8 +1,64 @@
 :root {
-  --pink: #f864bd;
-  --purple: #7b7beb;
   --text-color: white;
-  --popup-menu-size: 3.125rem; /* 50px */
-  --border-radius: 50%;
-  --icon-color: #7b7beb;
+  --deep-purple: rgba(30, 22, 33, .85); 
+  --purple-border: rgba(248, 99, 189, .25);
+}
+
+/* Projects Page Styles */
+.card {
+  color: var(--text-color);
+  &:hover {
+    border: .0625rem solid #ffffff44; /* 1px */
+    box-shadow: 0 .4375rem 3.125rem .625rem #ffffff44; /* 0 7px 50px 10px */
+    transform: scale(1.015);
+  }
+  .card-img-top {
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+  }
+}
+
+#projects {
+  .nav-tabs {
+    border-bottom: none;
+    .nav-link {
+      color: var(--text-color);
+      background: var(--deep-purple);
+      border-color: var(--purple-border);
+      &.active, &:hover, &.active:hover {
+        isolation: initial;
+        background: var(--purple-border);
+        border-bottom: 0 solid transparent;
+      }
+      .apps-icon {
+        margin: .2rem .275rem .275rem 0; /* 3.2px 4.4px 4.4px 0 */
+      }
+      .games-icon {
+        margin: .12rem .275rem .25rem 0; /* 1.9px 4.4px 4px 0 */
+      }
+    }
+  }
+  #myTabContent {
+    border-top-left-radius: 0 !important
+  }
+  .glow-icons {
+    .glow-icon {
+      margin: .1875rem; /* 3px */
+      @media (min-width: 768px) and (max-width: 1199px) {
+        margin: .25rem; /* 4px */
+      }
+    }
+    .glow-box-parent {
+      width: 2.5rem; /* 40px */
+      height: 2.5rem; /* 40px */
+      @media (min-width: 768px) and (max-width: 1199px) {
+        width: 2.375rem; /* 38px */
+        height: 2.375rem; /* 38px */
+      }
+      @media (min-width: 1400px) and (max-width: 1599px) {
+        width: 2.8125rem; /* 45px */
+        height: 2.8125rem; /* 45px */
+      }
+    }
+  }
 }

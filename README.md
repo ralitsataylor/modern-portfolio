@@ -1,7 +1,7 @@
 # 🚀 Modern Portfolio
 
-📝 [CodePen](https://codepen.io/ralitsataylor/pen/KOdQJZ/)
-🔗[Live GitHub Preview](https://ralitsataylor.github.io/modern-portfolio/)
+📝 [CodePen](https://codepen.io/ralitsavoronevska/pen/KOdQJZ/)
+🔗[Live GitHub Preview](https://ralitsavoronevska.github.io/modern-portfolio/)
 
 <table>
   <tr>
@@ -82,15 +82,14 @@ Mobile:
 🔨 SCSS Files [Responsiveness, Grid template areas, Flex Layout, transitions, mixins, etc.]                                                      
 ⛏️ [Google Font: Playfair Display](https://fonts.google.com/specimen/Playfair+Display/)                                                          
 🪓 [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)                                                             
-🪛 [Dev Icons](https://devicon.dev/)                                                                                                                 
-🔩                                                                    
+🪛 [Dev Icons](https://devicon.dev/)                                                                                                                           
 
 # ✨ Features:
-✅ A modern Bootstrap Portfolio Website                                                                              
-✅ Custom-styled Timeline with elegant Bootstrap Cards                                                                                         
-✅ Reference to Brendan Eich's Wikipedia Page                                                                                                     
-✅ Custom-styled Mr. Eich's Famous Quote                                                                                                          
-✅ Related Social and Info Links                   
+✅ Modern Matrix-like Themed Personal Portfolio Webpage                                                                                            
+✅ Fixed navigation with slick blur and smooth scroll        
+✅ Showcasing employment with typewritter effect                                                                                        
+✅ Developer icons with gradient hover effect                                                                                                
+✅ Colourful Classic Developer icons 
 ✅ Stylish Popup Menu                                                                                                                                  
 ✅ manifest.json                                                                                                                                       
 ✅ sitemap.xml                                                                                                                                         
@@ -99,8 +98,7 @@ Mobile:
 # 🧰 Online resources and tools:
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white/) <img src="./dist/img/svgs-for-readme-md/stackoverflow.svg?sanitize=true" alt="StackOverflow icon" loading="lazy"> ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white/) ![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white/) ![Wikipedia](https://img.shields.io/badge/Wikipedia-%23000000.svg?style=for-the-badge&logo=wikipedia&logoColor=white/)                  
 🖼️ [Photopea [Online Photo Editor]](https://www.photopea.com/)                                                                        
-🪄 [svg-to-png & svg minification](https://www.svgviewer.dev/)     
-💫 [svg online cropping tool](https://svgcrop.com/)                                                          
+🪄 [svg-to-png & svg minification](https://www.svgviewer.dev/)                                                     
 ⭐ [jpg-to-webp free converter](https://www.freeconvert.com/jpg-to-webp/)         
 🌃 [favicon converter](https://favicon.io/favicon-converter/)                                                                                    
 
@@ -119,12 +117,13 @@ Mobile:
 ⭐ [WebPageTest](https://www.webpagetest.org/)                                                                                                    
 
 # 🌟 Inspiration & Credits:                                          
-🎞️ [Pure JavaScript Type Writer Effect YouTube Tutorial](https://www.youtube.com/watch?v=POX3dT-pB4E)                                           
-🎞️ [Pure JavaScript Type Writer Effect Project in CodePen](https://codepen.io/bradtraversy/pen/jeNjwP)                                          
-📝 [Floating Action Button with Popup Menu [ELEMENTS]](https://codepen.io/RaduBratan/pen/eYJZLpN)                                                
-
+🎞️ [Pure JavaScript Type Writer Effect YouTube Tutorial](https://www.youtube.com/watch?v=POX3dT-pB4E/)                                           
+🎞️ [Pure JavaScript Type Writer Effect Project in CodePen](https://codepen.io/bradtraversy/pen/jeNjwP/)                                          
+📝 [Floating Action Button with Popup Menu [ELEMENTS]](https://codepen.io/RaduBratan/pen/eYJZLpN/)
+:globe_with_meridians: [Abdullah Iqbal's Vercel Portfolio](https://abdullah-portfolio-dev.vercel.app/)                                                
+🖌️ [Canva AI](https://www.canva.com/ai)                                                                                                                   
 ---
   
 🙌 Thanks for checking out my project! More coming 🔜.                                                                                           
 Stay tuned 🚀 and don't forget to give the project a star!                                                                                       
-⭐ Made with lots of 💗, ☕, and a sprinkle of ✨ by Ralitsa Taylor!                                                                                
+⭐ Made with lots of 💗, ☕, and a sprinkle of ✨ by Ralitsa Voronevska!                                                                                

@@ -1,28 +1,20 @@
-$secondary-color: #1fcbcf;
-
-@mixin easeOut {
-  transition: all .5s ease-out;
-}
-
 #contact-me {
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-    div {
-      font-size: 2rem;
-      border: 2px solid #fff;
-      padding: 1rem 2rem;
-      margin-bottom: 3rem;
-      @include easeOut;
-      &:hover {
-        padding: 0.5rem 1.5rem;
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-        span { color: set-text-color($secondary-color); }
-      }
-    }
-  }
+  // margin-top: 7.5rem; /* 120px */
+  // margin-bottom: 7.5rem; /* 120px */
+  // @media (min-width: 768px) {
+  //   margin-top: 16.35rem; /* 261.6px */
+  //   margin-bottom: 16.35rem; /* 261.6px */
+  // }
+  // @media (min-width: 992px) {
+  //   margin-top: 15.85rem; /* 253.6px */
+  //   margin-bottom: 15.85rem; /* 253.6px */
+  // }
+  // @media (min-width: 1200px) {
+  //   margin-top: 10.5rem; /* 253.6px */
+  //   margin-bottom: 10.5rem; /* 253.6px */
+  // }
+  // @media (min-width: 1600px) {
+  //   margin-top: 12.5rem; /* 253.6px */
+  //   margin-bottom: 12.5rem; /* 253.6px */
+  // }
 }

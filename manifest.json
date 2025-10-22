@@ -2,10 +2,10 @@
   "name": "Modern Portfolio",
   "short_name": "ModernPortfolio",
   "description": "Modern Portfolio",
-  "author": "Ralitsa Taylor",
+  "author": "Ralitsa Voronevska",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#1a1a1ad9",
+  "background_color": "#1e1621",
   "theme_color": "#7b7beb",
   "icons": [
     {
@@ -39,6 +39,6 @@
       "type": "image/x-icon"
     }
   ],
-  "canonical_url": "https://ralitsataylor.github.io/modern-portfolio/",
-  "screenshot": "https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png"
+  "canonical_url": "https://ralitsavoronevska.github.io/modern-portfolio/",
+  "screenshot": "https://ralitsavoronevska.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png"
 }

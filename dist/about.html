@@ -8,22 +8,22 @@
     <title>Modern Portfolio</title>
     <meta name="theme-color" content="#7b7beb">
     <meta name="description" content="Modern Portfolio">
-    <meta name="web_author" content="Ralitsa Taylor">
-    <link rel="canonical" href="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta name="web_author" content="Ralitsa Voronevska">
+    <link rel="canonical" href="https://ralitsavoronevska.github.io/modern-portfolio/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta property="og:url" content="https://ralitsavoronevska.github.io/modern-portfolio/">
     <meta property="og:title" content="Modern Portfolio">
     <meta property="og:description" content="Modern Portfolio">
-    <meta property="og:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
+    <meta property="og:image" content="https://ralitsavoronevska.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta name="twitter:url" content="https://ralitsavoronevska.github.io/modern-portfolio/">
     <meta name="twitter:title" content="Modern Portfolio">
     <meta name="twitter:description" content="Modern Portfolio">
-    <meta name="twitter:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
+    <meta name="twitter:image" content="https://ralitsavoronevska.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Icons -->
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-chrome.png">
@@ -56,267 +56,382 @@
 
   <body class="about-me position-relative fw-normal fst-normal">
 
-    <!-- start of header section -->
-    <header class="w-100">
-      <a href="index.html" class="nav-link" aria-label="Home page">
-        <div class="logo"></div>
-      </a>
-    </header>
-    <!-- end of header section -->
+    <!-- Fixed background and overlay -->
+    <div class="background-container"></div>
+    <div class="overlay"></div>
 
-    <!-- start of main section -->
-    <main id="about-me" class="d-flex flex-column text-center position-relative my-5 mx-3 mx-lg-2">
+    <!-- start of content -->
+    <div class="content-wrapper position-relative center flex-column">
 
-      <h1 class="display-2 mb-4">About <span class="gradient-text">Me</span></h1>
-      <h2 class="sm-heading mt-2 d-md-flex justify-content-md-center ps-md-0">
-        <p class="mb-2">Hi <img src="./img/waving-hand.png" width="35" height="35" class="mw-100 mb-3">,</p>
-        <p class="ps-md-2">I'm <span class="gradient-text">Ralitsa Taylor</span>!</p>
-      </h2>
+      <!-- start of header section -->
+      <header class="w-100 d-flex align-items-center justify-content-between">
+        
+        <a href="index.html" class="nav-link" aria-label="Home page">
+          <div class="logo"></div>
+        </a>
 
-      <!-- start of hero-skills-and-bio -->
-      <div class="hero-skills-and-bio d-flex flex-column flex-lg-row m-2">
+        <!-- start of social-icons -->
+          <div class="center gap-4 me-3">
 
-        <!-- start of hero-and-skills -->
-        <div class="hero-and-skills highlight d-flex flex-column m-lg-3">
+            <!-- start of linkedin profile link -->
+            <a href="https://www.linkedin.com/in/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my LinkedIn Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <title>LinkedIn icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <circle class="icon-path" cx="24" cy="24" r="20"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.775 14.284c0 1.245-.948 2.253-2.43 2.253-1.426 0-2.374-1.008-2.344-2.253-.03-1.306.918-2.284 2.372-2.284s2.373.978 2.402 2.284M14.12 32.819V18.316h4.507v14.502zm8.12-9.874c0-1.81-.06-3.352-.12-4.627h3.915l.208 1.987h.09c.592-.92 2.075-2.312 4.477-2.312 2.965 0 5.19 1.957 5.19 6.226v8.602h-4.508v-8.037c0-1.87-.652-3.144-2.283-3.144-1.246 0-1.987.86-2.283 1.69-.119.297-.178.711-.178 1.127v8.364h-4.507z" fill="#fff"/>
+              </svg>
+            </a>
+            <!-- end of linkedin profile link -->
 
-          <!-- start of hero-img -->
-          <div class="hero-img-container position-relative mx-auto mb-2">
-            <img src="img/hero.webp" width="225" height="225" class="hero-img" alt="Ralitsa Taylor">
-          </div> 
-          <!-- end of hero-img -->
+            <!-- start of github profile link -->
+            <a id="profile-link" href="https://github.com/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my GitHub Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                <g stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+              </svg>
+            </a>
+            <!-- end of github profile link -->
 
-          <!-- start of skill-icons -->
-          <div class="skill-icons mt-3 mx-auto">
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="0">
-                <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
-                <span class="tooltip position-absolute">HTML5</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="1">
-                <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
-                <span class="tooltip position-absolute">CSS3</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="2"> 
-                <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
-                <span class="tooltip position-absolute">SASS</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="3"> 
-                <img src="./img/svgs/tailwind-css.svg" width="32" height="32" alt="TailWindCSS Logo" loading="lazy">
-                <span class="tooltip position-absolute">TailWindCSS</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="4">    
-                <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
-                <span class="tooltip position-absolute">JavaScript</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="5">      
-                <img src="./img/svgs/jquery.svg" width="32" height="32" alt="jQuery Logo" loading="lazy">
-                <span class="tooltip position-absolute">jQuery</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="6">  
-                <img src="./img/svgs/bootstrap.svg" width="34" height="34" alt="Bootstrap Logo" loading="lazy">
-                <span class="tooltip position-absolute">Bootstrap</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="7">     
-                <img src="./img/svgs/git.svg" width="32" height="32" alt="Git Logo" loading="lazy">
-                <span class="tooltip position-absolute">Git</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="8"> 
-                <img src="./img/svgs/gulp.svg" width="40" height="38" alt="Gulp Logo" loading="lazy">
-                <span class="tooltip position-absolute">Gulp</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="9"> 
-                <img src="./img/svgs/vue-js.svg" width="32" height="32" alt="Vue.js Logo" loading="lazy">
-                <span class="tooltip position-absolute">Vue.js</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="10"> 
-                <img src="./img/svgs/vite-js.svg" width="32" height="32" alt="Vite.js Logo" loading="lazy">
-                <span class="tooltip position-absolute">Vite.js</span>
-              </div>
-            </div>   
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="11"> 
-                <img src="./img/svgs/vitest.svg" width="32" height="32" alt="Vitest Logo" loading="lazy">
-                <span class="tooltip position-absolute">Vitest</span>
-              </div>
-            </div> 
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="12"> 
-                <img src="./img/svgs/typescript.svg" width="32" height="32" alt="TypeScript Logo" loading="lazy">
-                <span class="tooltip position-absolute">TypeScript</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="13"> 
-                <img src="./img/svgs/node-js.svg" width="32" height="32" alt="Node.js Logo" loading="lazy">
-                <span class="tooltip position-absolute">Node.js</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="14">   
-                <img src="./img/svgs/express-js.svg" width="32" height="32" alt="Express.js Logo" loading="lazy">
-                <span class="tooltip position-absolute">Express.js</span>
-              </div>
-            </div>  
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="15">
-                <img src="./img/svgs/mongo-db.svg" width="30" height="32" alt="MongoDB Logo" loading="lazy">
-                <span class="tooltip position-absolute">MongoDB</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="16">     
-                <img src="./img/svgs/mongoose.svg" width="36" height="36" alt="Mongoose Logo" loading="lazy">
-                <span class="tooltip position-absolute">Mongoose</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="17">     
-                <img src="./img/svgs/postman.svg" width="32" height="32" alt="PostMan Logo" loading="lazy">
-                <span class="tooltip position-absolute">PostMan</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="18"> 
-                <img src="./img/svgs/firebase.svg" width="35" height="35" alt="FireBase Logo" loading="lazy">
-                <span class="tooltip position-absolute">FireBase</span>
-              </div>
-            </div>    
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="19">
-                <img src="./img/svgs/netlify.svg" width="35" height="35" alt="Netlify Logo" loading="lazy">
-                <span class="tooltip position-absolute">Netlify</span>
-              </div>
-            </div>      
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="20">
-                <img src="./img/svgs/vercel.svg" width="32" height="32" alt="Vercel Logo" loading="lazy">
-                <span class="tooltip position-absolute">Vercel</span>
-              </div>
-            </div>  
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="21">     
-                <img src="./img/svgs/photoshop.svg" width="32" height="32" alt="PhotoShop Logo" loading="lazy">
-                <span class="tooltip position-absolute">PhotoShop</span>
-              </div>
-            </div>
-            <div class="skill-icon d-inline-block">
-              <div class="glow-box-parent center relative" tabindex="22">  
-                <img src="./img/svgs/jira.svg" width="32" height="32" alt="JIRA Logo" loading="lazy">
-                <span class="tooltip position-absolute">JIRA</span>
-              </div>
-            </div>      
+            <!-- start of codepen profile link -->
+            <a href="https://codepen.io/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my CodePen Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <title>CodePen icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <g class="icon-path">
+                  <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                  <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                  <path d="M11.584 8.622V7.378L10.652 8z"/>
+                </g>
+                <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <!-- end of codepen profile link -->
+
           </div>
-          <!-- end of skill-icons -->
+          <!-- end of social-icons -->
+      </header>
+      <!-- end of header section -->
 
+      <!-- start of main section -->
+      <main id="about-me" class="d-flex flex-column text-center position-relative my-5 mx-3">
+
+        <h1 class="display-2 mb-2">About <span class="gradient-text">Me</span></h1>
+        <h2 class="sm-heading mt-2 mb-2">Hi, I'm <span class="gradient-text">Ralitsa Voronevska</span>!</h2>
+
+        <div class="center gap-2 col-12 my-4 mx-auto">
+          <a href="projects.html" class="btn btn-primary" role="button" aria-label="View my Projects"><span>View Projects</span></a>
+          <a href="https://ralitsavoronevska.github.io/modern-portfolio/dist/Ralitsa-Voronevska-CV.pdf" class="btn btn-primary" download="Ralitsa-Voronevska-CV.pdf" role="button" aria-label="Download my resume"><span>Download Resume</span></a>
         </div>
-        <!-- end of hero-and-skills -->
 
-        <!-- start of bio -->
-        <div class="bio highlight d-flex flex-column mt-4 m-lg-3">
-          <p class="bio-text sm-heading text-center ps-0 mb-0">A <span class="gradient-text">creative, passionate and proactive "can-do"</span> Front-end Developer with <span class="gradient-text">4 ½ years</span> of experience in building <span class="gradient-text">eye catching, high-performance, scalable and responsive web solutions</span>, following all the best practices in terms of <span class="gradient-text">UI/UX</span>, <span class="gradient-text">accessibility</span>, <span class="gradient-text">SEO</span> and <span class="gradient-text">SOLID principles</span>. I am focused on crafting solutions tailored to both <span class="gradient-text">user needs and business objectives</span>. I stand out with <span class="gradient-text">strong attention to detail</span>, <span class="gradient-text">excellent communication</span> and <span class="gradient-text">negotiation skills</span>, as well as my <span class="gradient-text">ability to work well individually and/or as a part a team</span>. I have a lot of experience in <span class="gradient-text">dynamic environments</span> and I am <span class="gradient-text">very enthusiastic regarding overcoming challenges and reaching targets</span>.</p>
+        <!-- start of hero-skills-and-bio -->
+        <div class="hero-skills-and-bio d-flex flex-column flex-lg-row">
+
+          <!-- start of hero-and-skills -->
+          <div class="hero-and-skills important-el rounded-4 p-3 d-flex flex-column">
+
+            <!-- start of hero-img -->
+            <div class="hero-img-container position-relative mx-auto mb-2">
+              <img src="img/hero.webp" width="200" height="200" class="hero-img" alt="Ralitsa Voronevska" loading="lazy">
+            </div> 
+            <!-- end of hero-img -->
+
+            <!-- start of glow-icons -->
+            <div class="glow-icons mt-3 mx-auto">
+
+              <!--start of HTML5 Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">
+                  <img src="img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">HTML5</span>
+                </div>
+              </div>
+              <!-- end of HTML5 Logo -->
+
+              <!-- start of CSS3 Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">
+                  <img src="img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">CSS3</span>
+                </div>
+              </div>
+              <!-- end of CSS3 Logo -->
+
+              <!-- start of Bootstrap Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">  
+                  <img src="img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Bootstrap</span>
+                </div>
+              </div>
+              <!-- end of Bootstrap Logo -->
+
+              <!-- start of SASS Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">SASS</span>
+                </div>
+              </div>
+              <!-- end of SASS Logo -->
+
+              <!-- start of TailWindCSS Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/tailwind-css.svg" width="32" height="32" alt="TailWindCSS Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">TailWindCSS</span>
+                </div>
+              </div>
+              <!-- end of TailWindCSS Logo -->
+
+              <!-- start of JavaScript Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">    
+                  <img src="img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">JavaScript</span>
+                </div>
+              </div>
+              <!-- end of JavaScript Logo -->
+
+              <!-- start of jQuery Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">      
+                  <img src="img/svgs/jquery.svg" width="32" height="32" alt="jQuery Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">jQuery</span>
+                </div>
+              </div>  
+              <!-- end of jQuery Logo -->
+              
+              <!-- start of Git Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">     
+                  <img src="img/svgs/git.svg" width="32" height="32" alt="Git Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Git</span>
+                </div>
+              </div>    
+              <!-- end of Git Logo -->
+
+              <!-- start of Gulp Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/gulp.svg" width="32" height="32" alt="Gulp Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Gulp</span>
+                </div>
+              </div>    
+              <!-- end of Gulp Logo -->
+
+              <!-- start of Vue.js Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/vue-js.svg" width="32" height="32" alt="Vue.js Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Vue.js</span>
+                </div>
+              </div>    
+              <!-- end of Vue.js Logo -->
+
+              <!-- start of TypeScript Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/typescript.svg" width="32" height="32" alt="TypeScript Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">TypeScript</span>
+                </div>
+              </div>    
+              <!-- end of TypeScript Logo -->
+
+              <!-- start of Node.js Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/node-js.svg" width="32" height="32" alt="Node.js Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Node.js</span>
+                </div>
+              </div>
+              <!-- end of Node.js Logo -->
+
+              <!-- start of Express.js Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">   
+                  <img src="img/svgs/express-js.svg" width="32" height="32" alt="Express.js Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Express.js</span>
+                </div>
+              </div>  
+              <!-- end of Express.js Logo -->
+
+              <!-- start of MongoDB Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">
+                  <img src="img/svgs/mongo-db.svg" width="32" height="32" alt="MongoDB Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">MongoDB</span>
+                </div>
+              </div>
+              <!-- end of MongoDB Logo -->
+
+              <!-- start of Mongoose Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">     
+                  <img src="img/svgs/mongoose.svg" width="32" height="32" alt="Mongoose Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Mongoose</span>
+                </div>
+              </div>
+              <!-- end of Mongoose Logo -->
+
+              <!-- start of PostMan Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">     
+                  <img src="img/svgs/postman.svg" width="32" height="32" alt="PostMan Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">PostMan</span>
+                </div>
+              </div>  
+              <!-- end of PostMan Logo -->
+              
+              <!-- start of Firebase Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative"> 
+                  <img src="img/svgs/firebase.svg" width="32" height="32" alt="FireBase Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">FireBase</span>
+                </div>
+              </div>    
+              <!-- end of Firebase Logo -->
+
+              <!-- start of Netlify Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">
+                  <img src="img/svgs/netlify.svg" width="32" height="32" alt="Netlify Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Netlify</span>
+                </div>
+              </div>      
+              <!-- end of Netlify Logo -->
+
+              <!-- start of Vercel Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">
+                  <img src="img/svgs/vercel.svg" width="32" height="32" alt="Vercel Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">Vercel</span>
+                </div>
+              </div>  
+              <!-- end of Vercel Logo -->
+
+              <!-- start of PhotoShop Logo -->
+              <div class="glow-icon d-inline-block">
+                <div class="glow-box-parent rounded-3 center position-relative">     
+                  <img src="img/svgs/photoshop.svg" width="32" height="32" alt="PhotoShop Logo" loading="lazy">
+                  <span class="tooltip rounded-2 position-absolute">PhotoShop</span>
+                </div>
+              </div>    
+              <!-- end of PhotoShop Logo -->
+
+            </div>
+            <!-- end of glow-icons -->
+
+          </div>
+          <!-- end of hero-and-skills -->
+
+          <!-- start of bio -->
+          <div class="bio important-el rounded-4 p-3 d-flex flex-column mt-4 mt-lg-0 ms-lg-4">
+            <p class="bio-text sm-heading text-center ps-0 px-xxl-3 mb-0 my-lg-auto">A <span class="gradient-text">creative, passionate and proactive "can-do"</span> Front-end Developer with <span class="gradient-text">4 ½ years</span> of experience in building <span class="gradient-text">eye catching, high-performance, scalable and responsive web solutions</span>, following all the best practices in terms of <span class="gradient-text">UI/UX</span>, <span class="gradient-text">accessibility</span>, <span class="gradient-text">SEO</span> and <span class="gradient-text">SOLID principles</span>. I am focused on crafting solutions tailored to both <span class="gradient-text">user needs and business objectives</span>. I stand out with <span class="gradient-text">strong attention to detail</span>, <span class="gradient-text">excellent communication</span> and <span class="gradient-text">negotiation skills</span>, as well as my <span class="gradient-text">ability to work well individually and/or as a part a team</span>. I have a lot of experience in <span class="gradient-text">dynamic environments</span> and I am <span class="gradient-text">very enthusiastic regarding overcoming challenges and reaching targets</span>.</p>
+          </div>
+          <!-- end of bio -->
+        
         </div>
-        <!-- end of bio -->
+        <!-- end of hero-skills-and-bio --> 
 
-      </div>   
-      <!-- end of hero-skills-and-bio -->
+        <!-- start of popup-menu section -->
+        <div class="popup-menu position-fixed">
+          <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
+          <div class="fab center position-relative"></div>
+          <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
 
-      <!-- start of popup-menu section -->
-      <div class="popup-menu position-fixed">
-        <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
-        <div class="fab center position-relative"></div>
-        <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
+            <!-- start of home page link -->
+            <a href="index.html" aria-label="Home page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <title>Home page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+              </svg>
+            </a>
+            <!-- end of home page link -->
 
-          <!-- start of home page link -->
-          <a href="index.html" aria-label="Home page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <title>Home page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-              <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-            </svg>
-          </a>
-          <!-- end of home page link -->
+            <!-- start of about me page link -->
+            <a href="about.html" aria-label="About me page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <title>About me page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+            </a>
+            <!-- end of about me page link -->
 
-          <!-- start of about me page link -->
-          <a href="about.html" aria-label="About me page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <title>About me page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-              <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-            </svg>
-          </a>
-          <!-- end of about me page link -->
+            <!-- start of my projects page link -->
+            <a href="projects.html" aria-label="My projects page link">
+              <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>My projects page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
+              </svg>
+            </a>
+            <!-- end of my projects page link -->
 
-          <!-- start of my projects page link -->
-          <a href="projects.html" aria-label="My projects page link">
-            <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>My projects page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
-            </svg>
-          </a>
-          <!-- end of my projects page link -->
+            <!-- start of contact me page link -->
+            <a href="contact.html" aria-label="Contact me page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <title>Contact me page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
+              </svg>
+            </a>
+            <!-- end of contact me page link -->
 
-          <!-- start of contact me page link -->
-          <a href="contact.html" aria-label="Contact me page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-              <title>Contact me page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
-            </svg>
-          </a>
-          <!-- end of contact me page link -->
-
+          </div>
         </div>
-      </div>
-      <!-- end of popup-menu section -->
+        <!-- end of popup-menu section -->
 
-    </main>
-    <!-- end of main section -->
+      </main>
+      <!-- end of main section -->
 
-    <footer id="footer" class="center fw-bold p-3">
-      <p class="lead fw-bold m-0 gradient-text"><a href="https://github.com/ralitsataylor/vue-portfolio" title="Visit my modern Vue.js Portfolio" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
+    </div>
+    <!-- end of content-wrapper -->   
+
+    <footer id="footer" class="w-100 center fw-bold p-3">
+      <p class="lead fw-bold m-0 gradient-text"><a href="https://github.com/ralitsavoronevska/vue-portfolio" title="Visit my modern Vue.js Portfolio" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Voronevska&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
     </footer>
 
   </body>

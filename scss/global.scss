@@ -4,17 +4,16 @@
 :root {
   --pink: #f864bd;
   --purple: #7b7beb;
-  --popup-menu-size: 3.125rem; /* 50px */
+  --deep-purple: rgba(30, 22, 33, .85);
+  --dark-overlay: rgba(26,26,26,.5);
+  --text-color: white;
   --border-radius: 50%;
+  --transition: var(--transition);
+  --popup-menu-size: 3.125rem; /* 50px */
 }
 
 @mixin gradient-border {
   background: linear-gradient(to right, var(--pink), var(--purple));
-}
-
-/* check if you need that */
-@mixin easeOut {
-  transition: all .3s ease-out;
 }
 
 * { 
@@ -31,24 +30,10 @@ html {
 }
 
 body {
+  color: var(--text-color);
   font-size: 1rem;
   line-height: 1.5;
-  color: white;
   font-family: "Playfair Display", sans-serif;
-  background: url('../img/full-background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  &:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(26, 26, 26, .85);   
-  }
 }
 
 /* Header */
@@ -64,7 +49,7 @@ header {
 .logo {
   width: 5rem; /* 80px */
   height: 5.3125rem; /* 85px */
-  transform: scale(0.7059);
+  transform: scale(.7059);
   background: url('../img/logo.png') no-repeat;
   &:hover {
     transform: scale(.75);
@@ -73,47 +58,126 @@ header {
 }
 
 a {
-  color: white;
+  color: var(--text-color);
   cursor: pointer;
 }
 
-/* Main */
-#home-section {
-  min-height: calc(100dvh - (5.3125rem + (2 * 3rem))); 
-  @media (min-width: 768px) {
-    min-height: calc(100dvh - (5.3125rem + (2 * 1.325rem))); 
+/* Fixed background and overlay */
+.background-container, .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-container {
+  z-index: -2; /* Behind everything */
+  background: url('../img/full-background.webp') no-repeat center center/cover fixed;
+  will-change: transform;
+}
+
+.overlay {
+  z-index: -1; /* Above background, below content */
+  background: rgba(26, 26, 26, .85);
+}
+
+.content-wrapper {
+  z-index: 1; /* Above overlay */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .background-container, .overlay {
+    background-attachment: scroll; /* Fallback for mobile jitter */
   }
-  @media (min-width: 1200px) {
-    min-height: calc(100dvh - (5.3125rem + (2 * 3.5rem)));
+}
+
+/* Home and Contact me Pages */
+.home-page, .contact-me {
+  min-height: 100vh;
+  .content-wrapper {
+    min-height: 100vh;
+  }
+  #contact-me {
+    min-height: calc(100vh - 9.0625rem); /* 100vh - 145px */
+  }
+}
+
+#home-page {
+  min-height: 100vh;
+  .hero-and-socials {
+    margin-top: 3.35rem; /* 53.6px */
+    @media (min-width: 768px) {
+      margin-top: 10.25rem; /* 164px */
+    }
+    @media (min-width: 1200px) {
+      margin-top: 5rem; /* 80px */
+    }
+  }
+  .name-and-info {
+    margin-top: 2rem; /* 32px */
+    h1 {
+      &.display-1 {
+        font-size: calc(1.125rem + 4.5vw) !important;
+        @media (min-width: 1200px) {
+          font-size: 4.25rem !important;
+        }
+      }
+    }
+    .info {
+      padding-left: 1rem; /* 16px */
+      @media (min-width: 768px) {
+        padding-left: 4.25rem; /* 68px */
+      }
+      @media (min-width: 1200px) {
+        padding-left: 6.25rem; /* 100px */
+      }
+    }
   }
 }
 
 /* Hero image */
 .hero-img-container {
-  padding: 2px; /* Border thickness */
-  @include gradient-border;
+  padding: 0.125rem; /* 2px */
+  background: linear-gradient(to right, var(--pink), var(--purple)) border-box;
   border-radius: var(--border-radius);
   box-sizing: border-box;
   .hero-img {
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent; /* 2px */
     border-radius: var(--border-radius);
-    object-fit: cover; /* Ensures image fits within circular shape */
+    object-fit: cover;
   }
 }
 
-// Headings
+/* Headings */
 h1, h2, h3 {
   &.sm-heading {
     padding: .2rem 0; /* 3.2px 0 */
   }
 }
 
-h2, p {
+h2, h3, h4, p {
   &.sm-heading {
     font-size: calc(1.275rem + .9vw); /* 2.4px + .9% of viewport width */
   }
 }
 
+/* media queries for responsive design */
+/* Headings and paragraphs with small heading style */
+h2, p {
+  &.sm-heading:not(.info, .bio-text, .projects-heading) { 
+    @media (min-width: 768px) {
+      padding-left: 2.1875rem; /* 35px */
+      font-size: calc(1.325rem + .9vw); /* 2.12px + .9% of viewport width */
+    }
+    @media (min-width: 1200px) {
+      padding-left: 2.75rem !important; /* 44px */
+    }
+  }
+}
+
+/* Common styles */
 .gradient-text {
   background-clip: text;
   color: rgba(0, 0, 0, 0);
@@ -126,6 +190,19 @@ h2, p {
   justify-content: center;
 }
 
+/* SVG icons */
+.svg-icon {
+  .icon-path {
+    fill: var(--purple);
+    transition: fill .3s ease-out;
+  }
+  &:hover {
+    .icon-path {
+      fill: url(#linearGradient);
+    }
+  }
+}
+
 /* Floating Action Button */
 .popup-menu {
   width: var(--popup-menu-size);
@@ -133,6 +210,7 @@ h2, p {
   border-radius: var(--border-radius);
   bottom: 1rem; 
   right: 1rem;
+  z-index: 1050;
   .fab {
     background: var(--purple);
     width: var(--popup-menu-size);
@@ -147,7 +225,7 @@ h2, p {
       display: block;
       position: absolute;
       border-radius: .25rem; /* 4px */
-      background: white;
+      background: var(--text-color);
     }
     &::before {
       width: .25rem; /* 4px */
@@ -163,7 +241,7 @@ h2, p {
     width: 3rem; /* 48px */
     height: 10rem; /* 160px */
     border-radius: 4rem; /* 64px */
-    background: white;
+    background: var(--text-color);
     z-index: 2;
     padding: .5rem; /* 8px */
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .4); /* 0 2px 4px */
@@ -198,19 +276,6 @@ h2, p {
         left: 0;
         opacity: 1;
       }
-    }
-  }
-}
-
-/* SVG icons */
-.svg-icon {
-  .icon-path {
-    fill: var(--purple);
-    transition: fill .3s ease-out;
-  }
-  &:hover {
-    .icon-path {
-      fill: url(#linearGradient);
     }
   }
 }
@@ -263,23 +328,5 @@ h2, p {
   }
   100% {
     transform: scale(1, 1);
-  }
-}
-
-/** media queries for responsive design **/
-@media (min-width: 768px) {
-  h2, p {
-    &.sm-heading { 
-      padding-left: 2.1875rem; /* 35px */
-      font-size: calc(1.325rem + .9vw); 
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  h2, p {
-    &.sm-heading { 
-      padding-left: 2.75rem; /* 44px */
-    }
   }
 }

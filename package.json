@@ -1,21 +1,21 @@
 {
   "name": "modern-portfolio",
   "version": "1.0.0",
-  "description": "Modern Responsive Portfolio Website",
+  "description": "Modern Portfolio Website",
   "main": "main.js",
-  "homepage": "https://ralitsataylor.github.io/modern-portfolio",
+  "homepage": "https://ralitsavoronevska.github.io/modern-portfolio",
   "scripts": {
     "scss": "sass --watch --style=compressed --no-source-map scss/:dist/css/",
     "deploy": "gh-pages -d dist"
   },
-  "author": "Ralitsa Taylor",
+  "author": "Ralitsa Voronevska",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ralitsataylor/modern-portfolio.git"
+    "url": "git+https://github.com/ralitsavoronevska/modern-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/ralitsataylor/modern-portfolio/issues"
+    "url": "https://github.com/ralitsavoronevska/modern-portfolio/issues"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
