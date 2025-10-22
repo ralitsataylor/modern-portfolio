@@ -8,22 +8,22 @@
     <title>Modern Portfolio</title>
     <meta name="theme-color" content="#7b7beb">
     <meta name="description" content="Modern Portfolio">
-    <meta name="web_author" content="Ralitsa Taylor">
-    <link rel="canonical" href="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta name="web_author" content="Ralitsa Voronevska">
+    <link rel="canonical" href="https://ralitsavoronevska.github.io/modern-portfolio/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta property="og:url" content="https://ralitsavoronevska.github.io/modern-portfolio/">
     <meta property="og:title" content="Modern Portfolio">
     <meta property="og:description" content="Modern Portfolio">
-    <meta property="og:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
+    <meta property="og:image" content="https://ralitsavoronevska.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ralitsataylor.github.io/modern-portfolio/">
+    <meta name="twitter:url" content="https://ralitsavoronevska.github.io/modern-portfolio/">
     <meta name="twitter:title" content="Modern Portfolio">
     <meta name="twitter:description" content="Modern Portfolio">
-    <meta name="twitter:image" content="https://ralitsataylor.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
+    <meta name="twitter:image" content="https://ralitsavoronevska.github.io/modern-portfolio/dist/img/modern-portfolio-desktop-preview-1.png">
 
     <!-- Icons -->
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-chrome.png">
@@ -45,6 +45,7 @@
     <!-- <link rel="stylesheet" href="purged-bootstrap.min.css" fetchpriority="high"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" fetchpriority="high">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/inner-pages.css">
     <link rel="stylesheet" href="css/projects.css">
 
     <!-- noscript fallbacks -->
@@ -55,177 +56,1922 @@
 
   <body class="projects position-relative fw-normal fst-normal">
 
-    <!-- start of header section -->
-    <header class="w-100">
-      <a href="index.html" class="nav-link" aria-label="Home page">
-        <div class="logo"></div>
-      </a>
-    </header>
-    <!-- end of header section -->
+    <!-- Fixed background and overlay -->
+    <div class="background-container"></div>
+    <div class="overlay"></div>
 
-    <!-- start of main section -->
-    <main id="projects" class="center position-relative">
-      <!-- START PROJECTS SECTION -->
-      <section id="projects" class="projects-section">
-        <h2 class="lg-heading">My <span class="gradient-text">Projects</span></h2>
-        <p class="tabCards__filters__desc all--desc active--desc">Check out my latest web software development projects, which include <span class="gradient-text">FreeCodeCamp Projects</span>, <span class="gradient-text">Personal Projects</span> and <span class="gradient-text">Front-end Developer Interview Tasks</span>. Use the buttons below to filter the Projects by category.</p>
-        <p class="tabCards__filters__desc fcc--desc">These projects are part of the <span class="gradient-text">Responsive Web Design Projects Certification</span> @ <span class="gradient-text">FreeCodeCamp</span> [300 hours]</p>
-        <p class="tabCards__filters__desc personal--desc">These are <span class="gradient-text">Personal Projects</span> that I've created alone or in a team along the <span class="gradient-text">Front-end Development road</span>.</p>
-        <p class="tabCards__filters__desc fed--desc">These are <span class="gradient-text">Front-end Developer Interview Tasks</span> that I've realized during my participation in a few <span class="gradient-text">Front-end Developer Interviews</span>.</p>
+    <!-- start of content -->
+    <div class="content-wrapper position-relative">
 
-        <div class="container my-5">
-        <h2 class="text-center mb-4">My Projects</h2>
-        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <!-- start of header section -->
+      <header class="w-100 d-flex align-items-center justify-content-between">
+        
+        <a href="index.html" class="nav-link" aria-label="Home page">
+          <div class="logo"></div>
+        </a>
+
+        <!-- start of social-icons -->
+          <div class="center gap-4 me-3">
+
+            <!-- start of linkedin profile link -->
+            <a href="https://www.linkedin.com/in/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my LinkedIn Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <title>LinkedIn icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <circle class="icon-path" cx="24" cy="24" r="20"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.775 14.284c0 1.245-.948 2.253-2.43 2.253-1.426 0-2.374-1.008-2.344-2.253-.03-1.306.918-2.284 2.372-2.284s2.373.978 2.402 2.284M14.12 32.819V18.316h4.507v14.502zm8.12-9.874c0-1.81-.06-3.352-.12-4.627h3.915l.208 1.987h.09c.592-.92 2.075-2.312 4.477-2.312 2.965 0 5.19 1.957 5.19 6.226v8.602h-4.508v-8.037c0-1.87-.652-3.144-2.283-3.144-1.246 0-1.987.86-2.283 1.69-.119.297-.178.711-.178 1.127v8.364h-4.507z" fill="#fff"/>
+              </svg>
+            </a>
+            <!-- end of linkedin profile link -->
+
+            <!-- start of github profile link -->
+            <a id="profile-link" href="https://github.com/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my GitHub Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                <g stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+              </svg>
+            </a>
+            <!-- end of github profile link -->
+
+            <!-- start of codepen profile link -->
+            <a href="https://codepen.io/ralitsavoronevska/" class="center" target="_blank" rel="noopener" aria-label="Visit my CodePen Profile">
+              <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <title>CodePen icon</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <g class="icon-path">
+                  <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                  <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                  <path d="M11.584 8.622V7.378L10.652 8z"/>
+                </g>
+                <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <!-- end of codepen profile link -->
+
           </div>
+          <!-- end of social-icons -->
+      </header>
+      <!-- end of header section -->
 
-          <!-- Carousel Items -->
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Project 1</h5>
-                      <p class="card-text">A brief description of your first project goes here.</p>
-                      <a href="#" class="btn btn-primary">View Project</a>
+      <!-- start of main section -->
+      <main id="projects" class="projects-section d-flex flex-column text-center position-relative my-5 mx-3">
+
+        <h1 class="display-2 mb-2">My <span class="gradient-text">Projects</span></h1>
+
+        <div class="center col-6 col-md-6 my-4 mx-auto">
+          <a href="https://ralitsavoronevska.github.io/modern-portfolio/dist/Ralitsa-Voronevska-CV.pdf" class="btn btn-primary" download="Ralitsa-Voronevska-CV.pdf" role="button" aria-label="Download my resume"><span>Download Resume</span></a>
+        </div>
+        
+        <!-- start of Projects section navigation -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+          <!-- start of FCC Projects nav-link -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="fcc-tab" data-bs-toggle="tab" data-bs-target="#fcc-tab-pane" type="button" role="tab" aria-controls="fcc-tab-pane" aria-selected="true">FCC</button>
+          </li>
+          <!-- end of FCC Projects nav-link -->
+
+          <!-- start of Apps Projects nav-link -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="apps-tab" data-bs-toggle="tab" data-bs-target="#apps-tab-pane" type="button" role="tab" aria-controls="apps-tab-pane" aria-selected="false">Apps</button>
+          </li>
+          <!-- end of Apps Projects nav-link -->
+
+          <!-- start of Games Projects nav-link -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="games-tab" data-bs-toggle="tab" data-bs-target="#games-tab-pane" type="button" role="tab" aria-controls="games-tab-pane" aria-selected="false">Games</button>
+          </li>
+          <!-- end of Games Projects nav-link -->
+
+          <!-- start of API Project nav-link -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="api-tab" data-bs-toggle="tab" data-bs-target="#api-tab-pane" type="button" role="tab" aria-controls="api-tab-pane" aria-selected="false">API</button>
+          </li>
+          <!-- end of API Project nav-link -->
+
+        </ul>
+        <!-- end of Projects section navigation -->
+
+        <!-- start of Projects section tab content -->
+        <div class="tab-content important-el rounded-4" id="myTabContent">
+
+          <!-- start of FCC Projects section tab -->
+          <div class="tab-pane fade show active" id="fcc-tab-pane" role="tabpanel" aria-labelledby="fcc-tab" tabindex="0">
+
+            <h2 class="sm-heading projects-heading mt-4">My <span class="gradient-text">FCC</span> Responsive Web Design Certification Projects</h2>
+
+            <!-- start of FCC Projects section -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-2 mb-4">
+
+              <!-- start of Survey Form Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/fcc-survey-form.webp" width="300" height="215" class="card-img-top w-100" alt="Netflix Survey Form Clone" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Survey Form</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Netflix Survey Form Clone</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-3 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                      </div>
+                      <!-- end of glow-icons -->  
+
+                      <!-- start of Survey Form Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/fcc-survey-form/" target="_blank" rel="noopener" aria-label="View my Survey Form Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/ZgbxGq/" target="_blank" rel="noopener" aria-label="View my Survey Form Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/fcc-survey-form/" target="_blank" rel="noopener" aria-label="View my Survey Form Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Survey Form Project links -->
+
                     </div>
+                    <!-- end of card-text -->
+
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Project 2</h5>
-                      <p class="card-text">A brief description of your second project goes here.</p>
-                      <a href="#" class="btn btn-primary">View Project</a>
+              <!-- end of Survey Form Project -->
+
+              <!-- start of Tribute Page Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/fcc-tribute-page.webp" width="460" height="430" class="card-img-top w-100" alt="Tribute Page for Brendan Eich" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Tribute Page</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Tribute Page for Brendan Eich</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Tribute Page Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/fcc-tribute-page/" target="_blank" rel="noopener" aria-label="View my Tribute Page Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/zVOaXb/" target="_blank" rel="noopener" aria-label="View my Tribute Page Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/fcc-tribute-page/" target="_blank" rel="noopener" aria-label="View my Tribute Page Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Tribute Page Project links -->
+
                     </div>
+                    <!-- end of card-text -->
+
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                      <h5 class="card-title">Project 3</h5>
-                      <p class="card-text">A brief description of your third project goes here.</p>
-                      <a href="#" class="btn btn-primary">View Project</a>
+              <!-- end of Tribute Page Project -->
+
+              <!-- start of Technical Documentation Page Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/fcc-technical-documentation-page.webp" width="300" height="215" class="card-img-top w-100" alt="JavaScript Technical Documentation Page" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Tech Doc Page</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>JS Tech Doc Page</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Technical Documentation Page Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/fcc-tech-doc-page/" target="_blank" rel="noopener" aria-label="View my Tech Doc Page Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/zgvWKQ/" target="_blank" rel="noopener" aria-label="View my Tech Doc Page Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/fcc-tech-doc-page/" target="_blank" rel="noopener" aria-label="View my Tech Doc Page Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Technical Documentation Page Project links -->
+
                     </div>
+                    <!-- end of card-text -->
+
                   </div>
                 </div>
               </div>
+              <!-- end of Technical Documentation Page Project -->
+
+              <!-- start of Product Landing Page Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/fcc-product-landing-page.webp" width="460" height="430" class="card-img-top w-100" alt="Vue.js Product Landing Page Clone" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Product Page</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Vue Product Page Clone</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Product Landing Page Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/fcc-product-landing-page/" target="_blank" rel="noopener" aria-label="View my Product Landing Page Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/GgJKYWp/" target="_blank" rel="noopener" aria-label="View my Product Landing Page Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/fcc-product-landing-page/" target="_blank" rel="noopener" aria-label="View my Product Landing Page's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Product Landing Page Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of Product Landing Page Project -->
+
             </div>
+            <!-- end of FCC Projects section -->
+
           </div>
+          <!-- end of FCC Projects section tab -->
 
-          <!-- Carousel Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <!-- start of Apps Projects section tab -->
+          <div class="tab-pane fade" id="apps-tab-pane" role="tabpanel" aria-labelledby="apps-tab" tabindex="0">
+
+            <h2 class="sm-heading projects-heading mt-4">My <span class="gradient-text">App</span> Projects</h2>
+
+            <!-- start of Apps Projects section -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-2 mb-4">
+
+              <!-- start of Find a Coach App Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/coming-soon.webp" width="300" height="215" class="card-img-top w-100" alt="Find a Coach App Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Find a Coach App</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Part of "Vue - The Complete Guide (incl. Router & Composition API)" Udemy Course</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-3 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                      </div>
+                      <!-- end of glow-icons -->  
+
+                      <!-- start of Find a Coach App Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Find a Coach App Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Find a Coach App Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Find a Coach App Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Find a Coach App Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of Find a Coach App Project -->
+
+              <!-- start of Forkify App Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/coming-soon.webp" width="460" height="430" class="card-img-top w-100" alt="Forkify App Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Forkify App</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Part of "The Complete JavaScript Course 2025: From Zero to Expert!" Udemy Course</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Forkify App Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Forkify App Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Forkify App Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Forkify App Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Forkify App Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of Forkify App Project -->
+
+              <!-- start of Learning Resources App Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/coming-soon.webp" width="300" height="215" class="card-img-top w-100" alt="Learning Resources App Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Learning Resources App</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Part of "Vue - The Complete Guide (incl. Router & Composition API)" Udemy Course</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Learning Resources App Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Learning Resources App Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Learning Resources App Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Learning Resources App Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Learning Resources App Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of Learning Resources App Project -->
+
+              <!-- start of Mapty App Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/coming-soon.webp" width="460" height="430" class="card-img-top w-100" alt="Mapty App Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Mapty App</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Part of "The Complete JavaScript Course 2025: From Zero to Expert!" Udemy Course</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Mapty App Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Mapty App Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Mapty App Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Mapty App Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Mapty App Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of Mapty App Project -->
+
+            </div>
+            <!-- end of Apps Projects section -->
+
+          </div>
+          <!-- end of Apps Projects section tab -->
+
+          <!-- start of Games Projects section tab -->
+          <div class="tab-pane fade" id="games-tab-pane" role="tabpanel" aria-labelledby="games-tab" tabindex="0">
+
+            <h2 class="sm-heading projects-heading mt-4">My <span class="gradient-text">Games</span> Projects</h2>
+
+            <!-- start of Games Projects section -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-2 mb-4">
+
+              <!-- start of Guess My Number Game Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/guess-my-number-game.webp" width="460" height="430" class="card-img-top w-100" alt="Guess My Number" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Guess My Number</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Guess a number between 1 and 20</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Guess My Number Game links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="hhttps://github.com/ralitsavoronevska/guess-my-number/" target="_blank" rel="noopener" aria-label="View my Guess My Number Game Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/eYGqybJ/" target="_blank" rel="noopener" aria-label="View my Guess My Number Game Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/guess-my-number/" target="_blank" rel="noopener" aria-label="View my Guess My Number Game Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Guess My Number Game Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of Guess My Number Game Project -->
+
+              <!-- start of Monster Slayer Game Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/monster-slayer-game.webp" width="300" height="215" class="card-img-top w-100" alt="Monster Slayer Game Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Monster Slayer</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Monster Slayer Game Project</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Monster Slayer Game Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Monster Slayer Game Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Monster Slayer Game Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my Monster Slayer Game Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Monster Slayer Game Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of Monster Slayer Game Project -->
+
+              <!-- start of Pig Game Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/pig-game.webp" width="460" height="430" class="card-img-top w-100" alt="Pig Game Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">Pig Game</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>Pig (single dice) Game</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of Pig Game Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/pig-game/" target="_blank" rel="noopener" aria-label="View my Pig Game Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="https://codepen.io/ralitsavoronevska/pen/LYQQyBL/" target="_blank" rel="noopener" aria-label="View my Pig Game Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="https://ralitsavoronevska.github.io/pig-game/" target="_blank" rel="noopener" aria-label="View my Pig Game Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of Pig Game Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of Pig Game Project -->
+
+            </div>
+            <!-- end of Games Projects section -->
+
+          </div>
+          <!-- start of Games Projects section tab -->
+
+          <!-- start of API Project section tab -->
+          <div class="tab-pane fade" id="api-tab-pane" role="tabpanel" aria-labelledby="api-tab" tabindex="0">
+
+            <h2 class="sm-heading projects-heading mt-4">My <span class="gradient-text">REST API</span> Project</h2>
+
+            <!-- start of API Project section -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-2 mb-4">
+
+              <!-- start of REST API Project -->
+              <div class="col">
+                <div class="card h-100 important-el rounded-4 p-3 project-tile">
+                  <img src="./img/projects/coming-soon.webp" width="460" height="430" class="card-img-top w-100" alt="REST API Project" loading="lazy">
+                  <div class="card-body pb-0">
+                    <h4 class="card-title gradient-text">REST API</h4>
+
+                    <!-- start of card-text -->
+                    <div class="card-text">
+
+                      <p>REST API Project</p>
+
+                      <!-- start of glow-icons -->
+                      <div class="glow-icons center gap-2 p-3">
+
+                        <!-- start of HTML5 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/html5.svg" width="32" height="32" alt="HTML5 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">HTML5</span>
+                          </div>
+                        </div>
+                        <!-- end of HTML5 Logo -->
+
+                        <!-- start of CSS3 Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">
+                            <img src="./img/svgs/css3.svg" width="32" height="32" alt="CSS3 Logo" loading="lazy">
+                            <span class="tooltip position-absolute">CSS3</span>
+                          </div>
+                        </div>
+                        <!-- end of CSS3 Logo -->
+
+                        <!-- start of SASS Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative"> 
+                            <img src="./img/svgs/sass.svg" width="32" height="32" alt="SASS Logo" loading="lazy">
+                            <span class="tooltip position-absolute">SASS</span>
+                          </div>
+                        </div>
+                        <!-- end of SASS Logo -->
+
+                        <!-- start of JavaScript Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">    
+                            <img src="./img/svgs/javascript.svg" width="32" height="32" alt="JavaScript Logo" loading="lazy">
+                            <span class="tooltip position-absolute">JavaScript</span>
+                          </div>
+                        </div>
+                        <!-- end of JavaScript Logo -->
+
+                        <!-- start of Bootstrap Logo -->
+                        <div class="glow-icon d-inline-block">
+                          <div class="glow-box-parent center relative">  
+                            <img src="./img/svgs/bootstrap.svg" width="32" height="32" alt="Bootstrap Logo" loading="lazy">
+                            <span class="tooltip position-absolute">Bootstrap</span>
+                          </div>
+                        </div>
+                        <!-- end of Bootstrap Logo -->
+                        
+                      </div>
+                      <!-- end of glow-icons -->
+
+                      <!-- start of REST API Project links -->
+                      <div class="center gap-5 p-3">
+                      
+                        <!-- start of github project link -->
+                        <a href="https://github.com/ralitsavoronevska/rest-api-with-nodejs/" target="_blank" rel="noopener" aria-label="View my REST API Project in GitHub">
+                          <svg class="svg-icon" width="45" height="45" viewBox="-2.4 -2.4 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <rect x=".95" y=".95" width="22.5" height="23" rx="17" fill="#fff"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"/>
+                          </svg>
+                        </a>
+                        <!-- end of github project link -->
+
+                        <!-- start of codepen project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my REST API Project in CodePen">
+                          <svg class="svg-icon" width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <title>CodePen icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <g class="icon-path">
+                              <path d="M4.416 7.378v1.244L5.346 8zm3.211-.905V4.738L4.712 6.683l1.302.87zm3.658.21L8.37 4.738v1.735l1.613 1.08zM4.712 9.32l2.915 1.942V9.527l-1.613-1.08zm3.658.207v1.735l2.915-1.942-1.302-.873zM8 7.12 6.683 8 8 8.879 9.314 8z"/>
+                              <path d="M8 1a7 7 0 1 0 .001 14.001A7 7 0 0 0 8 1m4.327 8.32q0 .026-.003.047l-.003.015-.006.033-.005.018-.01.026-.008.018c-.003.009-.01.018-.012.024l-.012.017-.015.024-.012.015-.017.02-.015.015-.02.018-.019.012q-.003 0-.005.006l-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631q-.003 0-.006-.006l-.018-.012-.02-.018-.016-.014-.017-.021c-.003-.006-.01-.012-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.012-.024-.009-.018-.008-.026-.006-.018a.1.1 0 0 1-.006-.033l-.003-.015q-.004-.023-.003-.047V6.686q0-.026.003-.048l.003-.014.006-.033.006-.018.008-.026.01-.018q.005-.014.011-.024l.012-.017.015-.024.012-.015.017-.02.015-.015.02-.018c.007-.003.013-.01.019-.012q.003 0 .006-.006L7.79 3.741a.37.37 0 0 1 .411 0l3.958 2.637q.002 0 .005.006l.018.012.021.018.015.014q.009.008.018.021l.011.015a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.009.026.005.018q.006.014.006.033l.003.014.003.048V9.32z"/>
+                              <path d="M11.584 8.622V7.378L10.652 8z"/>
+                            </g>
+                            <path fill="#fff" fill-rule="evenodd" d="M12.327 9.32q0 .026-.003.048l-.002.01v.004l-.004.017-.002.012v.004l-.004.009-.002.006v.003l-.01.026-.008.018-.009.018-.003.006-.012.017-.003.006-.004.006-.02.027-.008.01-.01.01-.014.015-.01.01-.01.008-.01.006-.009.006-.003.003-.003.003-3.96 2.64a.38.38 0 0 1-.414 0L3.832 9.631l-.003-.003-.002-.003-.01-.006-.008-.006-.01-.009-.01-.009-.016-.014-.017-.021-.012-.015a.1.1 0 0 1-.015-.024l-.012-.017-.009-.018-.003-.006-.009-.018-.009-.026-.003-.01-.002-.008a.1.1 0 0 1-.006-.033l-.002-.01-.001-.005q-.004-.023-.003-.047V6.686q0-.026.003-.047l.001-.01.002-.005.003-.017.002-.011V6.59l.003-.009.003-.009.01-.026.008-.018.009-.018.003-.006.012-.017.007-.012.008-.012.012-.015.008-.01.01-.01.014-.015.01-.01.01-.008.004-.002.006-.004.009-.006.003-.003.002-.003L7.79 3.741a.37.37 0 0 1 .411 0l3.957 2.637.004.003.002.003.01.006.005.004.003.002.006.005.005.004.01.009.015.014.017.021.008.01.004.005a.1.1 0 0 1 .015.024l.012.017.012.024.009.018.008.026.003.01.003.008q.005.014.006.033l.002.01.001.005.003.047V9.32zm-7.911-.698V7.378L5.345 8l-.93.622zm3.211-3.884v1.735l-1.613 1.08-1.302-.87zm.743 0 2.915 1.945-1.302.87-1.613-1.08zm-.743 6.524L4.712 9.32l1.302-.873 1.613 1.08zm.743 0V9.527l1.613-1.08 1.302.873zM8 8.879 6.683 8 8 7.121 9.314 8 8 8.88zm3.584-1.5v1.243L10.652 8z" clip-rule="evenodd"/>
+                          </svg>
+                        </a>
+                        <!-- end of codepen project link -->
+
+                        <!-- start of live preview project link -->
+                        <a href="#" target="_blank" rel="noopener" aria-label="View my REST API Project's Live Preview">
+                          <svg class="svg-icon" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title>Eye icon</title>
+                            <defs>
+                              <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                                <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                              </linearGradient>
+                            </defs>
+                            <style>.st3{fill:#fff}</style>
+                            <g id="Layer_1">
+                              <circle class="icon-path" cx="32" cy="32" r="32"/>
+                              <g style="opacity:.2">
+                                <circle cx="32" cy="34" r="20" style="fill:#231f20"/>
+                              </g>
+                              <circle class="st3" cx="32" cy="32" r="20"/>
+                              <circle cx="32" cy="32" r="12" style="fill:#77b3d4"/>
+                              <circle cx="32" cy="32" r="4" style="fill:#4f5d73"/>
+                              <circle class="st3" cx="34" cy="30" r="2"/>
+                              <circle class="st3" cx="40" cy="24" r="4"/>
+                            </g>
+                            <g id="Layer_2"/>
+                          </svg>
+                        </a>
+                        <!-- end of live preview project link -->
+
+                      </div>   
+                      <!-- end of REST API Project links -->
+
+                    </div>
+                    <!-- end of card-text -->
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of REST API Project -->
+
+            </div>
+            <!-- end of API Project section -->
+
+          </div>
+          <!-- start of API Project section tab -->
+
         </div>
-      </div>
+        <!-- end of Projects section tab content -->
 
-      </section>
-      <!-- END PROJECTS SECTION -->
+        <!-- start of popup-menu section -->
+        <div class="popup-menu position-fixed">
+          <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
+          <div class="fab center position-relative"></div>
+          <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
 
-      <!-- start of popup-menu section -->
-      <div class="popup-menu position-fixed">
-        <input type="checkbox" name="popup-menu" class="w-100 h-100 position-absolute" aria-label="Popup menu" />
-        <div class="fab center position-relative"></div>
-        <div class="fac position-absolute d-flex flex-column justify-content-around align-items-center">
+            <!-- start of home page link -->
+            <a href="index.html" aria-label="Home page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <title>Home page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+              </svg>
+            </a>
+            <!-- end of home page link -->
 
-          <!-- start of home page link -->
-          <a href="index.html" aria-label="Home page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <title>Home page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-              <path class="icon-path" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-            </svg>
-          </a>
-          <!-- end of home page link -->
+            <!-- start of about me page link -->
+            <a href="about.html" aria-label="About me page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <title>About me page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+            </a>
+            <!-- end of about me page link -->
 
-          <!-- start of about me page link -->
-          <a href="about.html" aria-label="About me page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <title>About me page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-              <path class="icon-path" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-            </svg>
-          </a>
-          <!-- end of about me page link -->
+            <!-- start of my projects page link -->
+            <a href="projects.html" aria-label="My projects page link">
+              <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>My projects page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
+              </svg>
+            </a>
+            <!-- end of my projects page link -->
 
-          <!-- start of my projects page link -->
-          <a href="projects.html" aria-label="My projects page link">
-            <svg class="svg-icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>My projects page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-11.56 2.36L7.68 11.6l2.76-2.76L9.6 8 6 11.6l3.6 3.6zm3.12 0 2.76-2.76-2.76-2.76.84-.84 3.6 3.6-3.6 3.6z"></path>
-            </svg>
-          </a>
-          <!-- end of my projects page link -->
+            <!-- start of contact me page link -->
+            <a href="contact.html" aria-label="Contact me page link">
+              <svg class="svg-icon" width="28" height="28" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <title>Contact me page link</title>
+                <defs>
+                  <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
+                    <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
+                  </linearGradient>
+                </defs>
+                <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
+              </svg>
+            </a>
+            <!-- end of contact me page link -->
 
-          <!-- start of contact me page link -->
-          <a href="contact.html" aria-label="Contact me page link">
-            <svg class="svg-icon" width="28" height="28" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-              <title>Contact me page link</title>
-              <defs>
-                <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f864bd;stop-opacity:1;" />
-                  <stop offset="85%" style="stop-color:#7b7beb;stop-opacity:1;" />
-                </linearGradient>
-              </defs>
-              <path class="icon-path" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"/>
-            </svg>
-          </a>
-          <!-- end of contact me page link -->
-
+          </div>
         </div>
-      </div>
-      <!-- end of popup-menu section -->
+        <!-- end of popup-menu section -->
 
-    </main>
-    <!-- end of main section -->
+      </main>
+      <!-- end of main section -->
 
-    <a href="https://ralitsataylor.github.io/modern-portfolio/dist/Ralitsa_Taylor_Resume.pdf" class="btn btn-lg btn-primary" download="Ralitsa_Taylor_Resume.pdf" role="button" aria-label="Download my resume">Download Resume</a>
+    </div>
+    <!-- end of content-wrapper -->  
 
-    <footer id="footer" class="center fw-bold p-3">
-      <p class="lead fw-bold m-0 gradient-text"><a href="https://github.com/ralitsataylor/vue-portfolio" title="Visit my modern Vue.js Portfolio" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
+    <footer id="footer" class="w-100 center fw-bold p-3">
+      <p class="lead fw-bold m-0 gradient-text"><a href="https://github.com/ralitsavoronevska/vue-portfolio" title="Visit my modern Vue.js Portfolio" class="fw-bold text-decoration-none gradient-text" target="_blank" rel="noopener">&#60;Ralitsa Voronevska&#47;&#62;</a> <span class="fw-bold">&copy; 2025</span></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
