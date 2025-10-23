@@ -121,7 +121,8 @@ Mobile:
 🎞️ [Pure JavaScript Type Writer Effect Project in CodePen](https://codepen.io/bradtraversy/pen/jeNjwP/)                                          
 📝 [Floating Action Button with Popup Menu [ELEMENTS]](https://codepen.io/RaduBratan/pen/eYJZLpN/)
 :globe_with_meridians: [Abdullah Iqbal's Vercel Portfolio](https://abdullah-portfolio-dev.vercel.app/)                                                
-🖌️ [Canva AI](https://www.canva.com/ai)                                                                                                                   
+🖌️ [Canva AI](https://www.canva.com/ai)
+🖼️ [Freepik - royalty free images](https://www.freepik.com/)                                                                                              
 ---
   
 🙌 Thanks for checking out my project! More coming 🔜.                                                                                           

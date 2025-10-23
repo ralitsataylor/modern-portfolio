@@ -62,3 +62,16 @@
     }
   }
 }
+
+/* SVG icons */
+.svg-greyed-out-icon {
+  .icon-path {
+    fill: var(--light-grey);
+    transition: fill .3s ease-out;
+  }
+  &:hover {
+    .icon-path {
+      fill: url(#linearGradientGrey);
+    }
+  }
+}
